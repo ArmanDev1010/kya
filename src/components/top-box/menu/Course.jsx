@@ -23,7 +23,7 @@ const Course = (props) => {
     window.addEventListener("resize", handleResize);
   }, [window.innerWidth]);
 
-  // return 
+  return (
     <div
       className="relative w-full h-full text-white text-left overflow-x-hidden bg-no-repeat bg-cover max-[1300px]:bg-center max-tablet:text-center"
       style={
