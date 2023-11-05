@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Montserratarm";
+  font-weight: normal;
+  src: url("./fonts/Montserratarm-Regular.otf") format("otf");
+}
+@font-face {
+  font-family: "Montserratarm";
+  font-weight: bold;
+  src: url("./fonts/Montserratarm-Bold.otf") format("otf");
+}
+@font-face {
+  font-family: "Montserratarm";
+  font-weight: bolder;
+  src: url("./fonts/Montserratarm-ExtraBold.otf") format("otf");
+}
+@font-face {
+  font-family: "Montserratarm";
+  font-weight: semibold;
+  src: url("./fonts/Montserratarm-SemiBold.otf") format("otf");
+}
+@font-face {
+  font-family: "Montserratarm";
+  font-weight: lighter;
+  src: url("./fonts/Montserratarm-Light.otf") format("otf");
+}
+
+:root {
+  --primary: "#F36967";
+  --secondary: "#FED501";
+  --thirdly: "#1FBDAF";
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  margin: 1em 0 0 0;
+  transition: all 0.5s ease;
+  position: absolute;
+  min-width: 150px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.menu a {
+  display: block;
+  text-decoration: none;
+  padding: 0.5em 0.5em;
+  outline: none;
+  margin-bottom: 0.2em;
+  transition: all 0.2s;
+}
+
+.menu {
+  overflow: hidden;
+  max-height: 0;
+}
+
+.menu_active {
+  max-height: 12em !important;
+  padding-bottom: 1em;
+}
+
+#nomenu {
+  gap: 8px;
+}
+
+#top {
+  display: none;
+}
+
+#bottom {
+  width: 700px;
+  height: 180px;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1300px) {
+  #course h1 {
+    font-size: max(2vw, 4.5vw);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  li #partners,
+  li #team {
+    display: none;
+  }
+}
+@media screen and (max-width: 1050px) {
+  #top-box {
+    border-bottom: none;
+  }
+  #top-box > div > ul {
+    display: none;
+  }
+  #top-box > div > div {
+    justify-content: flex-end !important;
+    width: 100%;
+  }
+  #course h1 {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #bottom {
+    display: none;
+  }
+  #top {
+    display: block;
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #nomenu {
+    display: none;
+  }
+}

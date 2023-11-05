@@ -1,0 +1,31 @@
+{
+    "weather_forcast_for": "Weather forecast for",
+    "top_box":      {  
+        "media": "Media",
+        "reviews": "Reviews",
+        "story": "Our Story",
+        "advantages": "Advantages",
+        "partners": "Our Partners",
+        "team": "Team",
+        "contact": "Contact",
+        "business" : {
+            "title": "Your Business from 0",
+            "subtitle_": "Learn a step-by-step process you can use to start",
+            "subtitle__": "your own business from scratch",
+            "duration": "Duration՝ 11 months",
+            "age": "For 10-18 year olds",
+            "signup": "Register",
+            "learnmore": "Learn more"
+        },
+        "right" : {
+            "title": "Interesting Law",
+            "subtitle_": "Learn how to find and understand the law, know your",
+            "subtitle__": "rights to be protected",
+            "duration": "Duration՝ 5 months",
+            "age": "For 10-18 year olds",
+            "signup": "Register",
+            "learnmore": "Learn more"
+        }
+    }
+}
+  

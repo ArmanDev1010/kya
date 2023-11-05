@@ -1,0 +1,42 @@
+import React from "react";
+
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+
+import { translationAM, translationEN, translationRU } from "./languages";
+
+import { Home } from "./components";
+import { Route, Routes } from "react-router-dom";
+
+const resources = {
+  am: {
+    translation: translationAM,
+  },
+  en: {
+    translation: translationEN,
+  },
+  ru: {
+    translation: translationRU,
+  },
+};
+
+i18n.use(initReactI18next).init({
+  resources,
+  lng: localStorage.getItem("language"),
+  fallbackLng: "am",
+  interpolation: {
+    escapeValue: false,
+  },
+});
+
+const App = () => {
+  return (
+    <div className="font-montserrat">
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </div>
+  );
+};
+
+export default App;
