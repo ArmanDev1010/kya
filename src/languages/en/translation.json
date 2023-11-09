@@ -10,8 +10,7 @@
         "contact": "Contact",
         "business" : {
             "title": "Your Business from 0",
-            "subtitle_": "Learn a step-by-step process you can use to start",
-            "subtitle__": "your own business from scratch",
+            "subtitle": "Learn a step-by-step process you can use to start your own business from scratch",
             "duration": "Duration՝ 11 months",
             "age": "For 10-18 year olds",
             "signup": "Register",
@@ -19,8 +18,7 @@
         },
         "right" : {
             "title": "Interesting Law",
-            "subtitle_": "Learn how to find and understand the law, know your",
-            "subtitle__": "rights to be protected",
+            "subtitle": "Learn how to find and understand the law, know your rights to be protected",
             "duration": "Duration՝ 5 months",
             "age": "For 10-18 year olds",
             "signup": "Register",

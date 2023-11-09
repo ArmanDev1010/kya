@@ -6,7 +6,7 @@ const Swiper_Slides = (props) => {
       {props.course === "business" ? (
         <a href={`https://www.youtube.com/watch?v=${props.yt}`} target="_blank">
           <div
-            className="w-full h-full fade bus_fade"
+            className="w-full h-full fade bus_fade aspect-video"
             style={{
               background: `url(/src/assets/images/academy/bus/vid${props.num}.jpg)`,
               backgroundPosition: "center",
@@ -31,19 +31,19 @@ const Swiper_Slides = (props) => {
             </svg>
           </div>
         </a>
-      ) : (
+      ) : props.course === "right" ? (
         <a href={`https://www.youtube.com/watch?v=${props.yt}`} target="_blank">
           <div
             className="w-full h-full fade rig_fade"
             style={{
               background: `url(/src/assets/images/academy/rig/rig${props.num}.jpg)`,
-              backgroundPosition: "center",
+              backgroundPosition: props.num == 2 ? "top" : "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
             }}
           ></div>
         </a>
-      )}
+      ) : null}
     </>
   );
 };

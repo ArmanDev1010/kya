@@ -2,7 +2,9 @@ import React, { useState } from "react";
 
 import { useTranslation } from "react-i18next";
 
-import { phone, location } from "../../assets/images";
+import { FiPhone } from "react-icons/fi";
+import { GrLocation } from "react-icons/gr";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 import { LanguageSwitcher, MenuBtn, SocialMedia } from "../index";
 
@@ -40,20 +42,7 @@ const TopBox = () => {
               onClick={contactDrop}
             >
               <span>{t("top_box.contact")}</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-3 h-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={4}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              <MdOutlineKeyboardArrowDown size="1.3rem" />
             </button>
             <ul className={isActive ? "menu menu_active" : "menu"}>
               <li className="transition-opacity ease-in-out duration-200 hover:opacity-75">
@@ -66,25 +55,17 @@ const TopBox = () => {
           </div>
           <ul className="flex gap-7 items-center relative text-sm max-desktop:text-[13px] max-desktop:gap-3 max-small:text-[14px]">
             <li className="max-small:hidden transition-opacity ease-in-out duration-200 hover:opacity-75">
-              <a href="tel:+37455500533" className="flex items-center gap-1">
-                <img
-                  src={phone}
-                  alt="phone"
-                  className="w-[30px] h-[30px] relative top-[2px]"
-                />
+              <a href="tel:+37455500533" className="flex items-center gap-2">
+                <FiPhone size="1.6em" />
                 <span className="max-small:hidden">+374 55 50 05 33</span>
               </a>
             </li>
             <li className="transition-opacity ease-in-out duration-200 hover:opacity-75">
               <a
                 href="https://maps.app.goo.gl/LZdzFtPiL1nAsfPNA"
-                className="flex items-center gap-1"
+                className="flex items-center gap-2"
               >
-                <img
-                  src={location}
-                  alt="location"
-                  className="w-[26px] h-[26px] max-small:w-6 max-small:h-6"
-                />
+                <GrLocation size="1.8em" />
                 <span className="max-small:hidden">Ազատության 24/15</span>
               </a>
             </li>

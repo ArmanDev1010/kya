@@ -1,26 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Grid } from "swiper/modules";
 
-import "./swiperstyles/videoswiper.css";
 import "swiper/css";
 import "swiper/css/grid";
 
 import Swiper_Slides from "./Swiper_Slides";
 
 const SwiperImgs = (props) => {
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => setIsDesktop(window.innerWidth));
+  }, [window.innerWidth]);
+
   return (
-    <div id={props.whaswa}>
+    <div id="bottom">
       <Swiper
-        slidesPerView={props.whaswa == "top" ? 1 : 2}
+        slidesPerView={isDesktop <= 601 ? 1 : 2}
         spaceBetween={10}
         autoplay={{
           delay: 2000,
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Grid]}
-        className="mySwiper"
+        className="mySwiper w-full h-full mx-auto !max-w-full"
       >
         <SwiperSlide>
           <Swiper_Slides course={props.course} num="1" yt="XoqNVOFVeJo" />
