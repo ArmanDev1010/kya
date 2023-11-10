@@ -43,7 +43,7 @@ const Menu = () => {
       <Swiper
         slidesPerView={1}
         autoplay={{
-          delay: 3000,
+          delay: 5000,
           disableOnInteraction: false,
         }}
         loop={true}

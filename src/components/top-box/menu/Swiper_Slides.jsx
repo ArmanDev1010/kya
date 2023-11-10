@@ -14,7 +14,7 @@ const Swiper_Slides = (props) => {
               backgroundRepeat: "no-repeat",
             }}
           ></div>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -32,7 +32,7 @@ const Swiper_Slides = (props) => {
           </div>
         </a>
       ) : props.course === "right" ? (
-        <a href={`https://www.youtube.com/watch?v=${props.yt}`} target="_blank">
+        <a href="https://www.facebook.com/kyacademyerevan" target="_blank">
           <div
             className="w-full h-full fade rig_fade"
             style={{
