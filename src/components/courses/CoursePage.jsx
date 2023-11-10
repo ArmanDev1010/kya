@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const Course = () => {
-  return (
-    <div></div>
-  )
-}
+const Course = (props) => {
+  return <div>{props.course}</div>;
+};
 
-export default Course
+export default Course;

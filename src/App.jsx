@@ -5,7 +5,7 @@ import { initReactI18next } from "react-i18next";
 
 import { translationAM, translationEN, translationRU } from "./languages";
 
-import { Course, Home } from "./components";
+import { CoursePage, Home } from "./components";
 import { Route, Routes } from "react-router-dom";
 
 const resources = {
@@ -34,7 +34,10 @@ const App = () => {
     <div className="font-montserrat">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/courses/" element={<Course />} />
+        <Route path="/courses">
+          <Route path="business" element={<CoursePage course="business" />} />
+          <Route path="rights" element={<CoursePage course="rights" />} />
+        </Route>
       </Routes>
     </div>
   );

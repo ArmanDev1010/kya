@@ -12,6 +12,7 @@ import {
   armanbusmobile,
   samvelrigmobile,
 } from "../../../assets/images";
+import { Link } from "react-router-dom";
 
 const Course = (props) => {
   const { t } = useTranslation();
@@ -90,16 +91,19 @@ const Course = (props) => {
             {t(`top_box.${props.course}.subtitle`)}
           </h2>
           <div className="flex items-center gap-4">
-            <a href="./" target="_blank">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSc_W2RqT7SljMwJrkuRo0iQuL9ys3I8UM711BBBfgmclVZFJA/viewform"
+              target="_blank"
+            >
               <button className="big:text-[22px] big:py-4 big:px-6 bg-white text-black font-medium py-3 px-5 text-lg rounded-lg transition-all ease-in-out duration-200 hover:bg-secondary hover:text-white">
                 {t(`top_box.${props.course}.signup`)}
               </button>
             </a>
-            <a href="./" target="_blank">
+            <Link to={`courses/${props.course}`}>
               <button className="big:text-[22px] big:py-4 big:px-6 bg-transparent text-white border font-medium py-3 px-5 text-lg rounded-lg transition-all ease-in-out duration-200 hover:opacity-75">
                 {t(`top_box.${props.course}.learnmore`)}
               </button>
-            </a>
+            </Link>
           </div>
           <SwiperImgs course={props.course} />
         </div>
