@@ -4,7 +4,7 @@ const SocialMedia = (props) => {
   return (
     <ul className="flex items-center relative" id={`${props.id}`}>
       <li className="transition-opacity ease-in-out duration-200 hover:opacity-75">
-        <a href="https://www.facebook.com/kyacademyerevan">
+        <a href="https://www.facebook.com/kyacademyerevan" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
@@ -18,7 +18,7 @@ const SocialMedia = (props) => {
         </a>
       </li>
       <li className="transition-opacity ease-in-out duration-200 hover:opacity-75">
-        <a href="https://www.youtube.com/@kidpreneursschool">
+        <a href="https://www.youtube.com/@kidpreneursschool" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"

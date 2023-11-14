@@ -24,6 +24,12 @@
             "signup": "Register",
             "learnmore": "Learn more"
         }
+    },
+    "navbar": {
+        "about": "About us",
+        "courses": "Courses",
+        "contact": "Contact",
+        "sign": "Register"
     }
 }
   

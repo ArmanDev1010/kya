@@ -12,6 +12,9 @@ import SwiperImgs from "./top-box/menu/SwiperImgs";
 // Courses
 import CoursePage from "./courses/CoursePage";
 
+//Navbar
+import Navbar from "./Navbar";
+
 export {
   Home,
   TopBox,
@@ -22,4 +25,5 @@ export {
   Course,
   SwiperImgs,
   CoursePage,
+  Navbar
 };

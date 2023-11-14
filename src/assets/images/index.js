@@ -1,3 +1,4 @@
+import logo from "./logo.png";
 import armanbus from "./team/armanbus.png";
 import samvelrig from "./team/samvelrig.png";
 import armanthumbnail from "./team/armanbusthumbnail.png";
@@ -14,6 +15,7 @@ import armanbusmobile from "./team/armanbusmobile.png";
 import samvelrigmobile from "./team/samvelrigmobile.png";
 
 export {
+  logo,
   armanbus,
   samvelrig,
   bus1,

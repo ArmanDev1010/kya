@@ -173,15 +173,13 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-  li #partners,
-  li #team {
+  li#partners,
+  li#team {
     display: none;
   }
 }
+
 @media screen and (max-width: 1050px) {
-  #top-box {
-    border-bottom: none;
-  }
   #top-box > div > ul {
     display: none;
   }

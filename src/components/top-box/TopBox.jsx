@@ -7,9 +7,12 @@ import { GrLocation } from "react-icons/gr";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 import { LanguageSwitcher, MenuBtn, SocialMedia } from "../index";
+import { useNavigate } from "react-router-dom";
 
 const TopBox = () => {
   const { t } = useTranslation();
+
+  const navigate = useNavigate();
 
   const [isActive, setIsActive] = useState(false);
 
@@ -18,19 +21,20 @@ const TopBox = () => {
   };
 
   return (
-    <div className="h-[42px] border border-solid" id="top-box">
-      <div className="max-w-[1480px] h-full mx-auto my-0 flex items-center justify-between px-12 max-desktop:px-4">
-        <ul className="flex gap-4 text-sm max-desktop:text-[13px] font-semibold">
+    <div className="h-[46px] border border-solid" id="top-box">
+      <div className="max-w-[1480px] h-full mx-auto my-0 flex items-center justify-between px-12 max-desktop:px-7 max-phone:px-[20px]">
+        <ul className="flex gap-4 text-[14px] max-desktop:text-[13px] font-semibold">
           {["media", "reviews", "story", "advantages", "partners", "team"].map(
             (text, key) => (
-              <li key={key}>
-                <a
-                  href={`#${text}`}
-                  className="transition-opacity ease-in-out duration-200 hover:opacity-75"
-                  id={`${text}`}
-                >
-                  {t(`top_box.${text}`)}
-                </a>
+              <li
+                key={key}
+                id={text}
+                onClick={() =>
+                  navigate("/", { state: { targetId: `${text}` } })
+                }
+                className="transition-opacity ease-in-out duration-200 hover:opacity-75 cursor-pointer"
+              >
+                {t(`top_box.${text}`)}
               </li>
             )
           )}
@@ -73,7 +77,7 @@ const TopBox = () => {
           <SocialMedia id="nomenu" />
           <div className="flex items-center gap-4">
             <LanguageSwitcher />
-            <MenuBtn />
+            <MenuBtn where="topbox" />
           </div>
         </div>
       </div>
