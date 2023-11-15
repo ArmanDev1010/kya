@@ -9,17 +9,23 @@ const Navbar = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
 
-  const handleScroll = (e) => {
-    const bottom = e.target.scrollHeight - e.target.scrollTop === e.target.clientHeight;
-    if (bottom) { 
-        console.log("bottom")
-    }
- }
+  const [scroll, setScroll] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 50);
+    });
+  });
 
   return (
-    <div className="py-6" onScroll={() => handleScroll}>
+    <div className={`headerMain ${scroll ? "sticky" : "py-6"}`}>
       <div className="max-w-[1480px] w-full px-12 flex items-center justify-between mx-auto my-0 max-desktop:px-7 max-phone:px-6">
-        <img src={logo} alt="logo" className="w-[70px] h-[70px]" />
+        <img
+          src={logo}
+          alt="logo"
+          className={`headerMain ${
+            scroll ? "w-[60px] h-[60px]" : "w-[70px] h-[70px]"
+          }`}
+        />
         <ul className="flex gap-12 text-[17px] max-btablet:gap-8 max-btablet:text-base max-stablet:hidden">
           {["about", "courses", "contact"].map((text, key) => (
             <li

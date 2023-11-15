@@ -138,6 +138,26 @@ body {
   stroke: black;
 }
 
+@keyframes fadeInDown {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  animation-duration: 0.7s;
+  animation-name: fadeInDown;
+  padding: 12px 0;
+  animation-timing-function: ease-out;
+  box-shadow: 0 10px 20px rgba(162,102,234,.1);
+}
+
 @media screen and (min-width: 1600px) {
   .mySwi {
     min-height: 220px !important;
