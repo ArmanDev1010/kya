@@ -58,7 +58,7 @@ const Menu = () => {
           <Course course="business" color="thirdly" />
         </SwiperSlide>
         <SwiperSlide>
-          <Course course="right" color="primary" />
+          <Course course="rights" color="primary" />
         </SwiperSlide>
       </Swiper>
       <Swiper

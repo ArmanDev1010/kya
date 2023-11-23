@@ -31,7 +31,7 @@ const Swiper_Slides = (props) => {
             </svg>
           </div>
         </a>
-      ) : props.course === "right" ? (
+      ) : props.course === "rights" ? (
         <a href="https://www.facebook.com/kyacademyerevan" target="_blank">
           <div
             className="w-full h-full fade rig_fade"

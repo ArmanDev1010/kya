@@ -17,13 +17,13 @@ const Navbar = () => {
   });
 
   return (
-    <div className={`headerMain ${scroll ? "sticky" : "py-6"}`}>
+    <div className={`headerMain ${scroll ? "sticky bg-white" : "py-4 bg-white"}`}>
       <div className="max-w-[1480px] w-full px-12 flex items-center justify-between mx-auto my-0 max-desktop:px-7 max-phone:px-6">
         <img
           src={logo}
           alt="logo"
           className={`headerMain ${
-            scroll ? "w-[60px] h-[60px]" : "w-[70px] h-[70px]"
+            scroll ? "w-[65px] h-[65px]" : "w-[70px] h-[70px]"
           }`}
         />
         <ul className="flex gap-12 text-[17px] max-btablet:gap-8 max-btablet:text-base max-stablet:hidden">
@@ -40,10 +40,15 @@ const Navbar = () => {
           ))}
         </ul>
         <button
-          className="text-[17px] bg-secondary text-white py-3 px-12 z rounded-full font-semibold transition-bg transition-text ease-in-out duration-200 hover:bg-primary hover:text-white 
+          className="cursor-pointer text-[17px] bg-secondary text-white py-3 px-12 z rounded-full font-semibold transition-bg transition-text ease-in-out duration-200 hover:bg-[#e6c000] 
           max-btablet:text-base max-btablet:px-8 max-stablet:hidden"
         >
-          <a href="">{t(`navbar.sign`)}</a>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc_W2RqT7SljMwJrkuRo0iQuL9ys3I8UM711BBBfgmclVZFJA/viewform"
+            target="_blank"
+          >
+            {t(`navbar.sign`)}
+          </a>
         </button>
         <MenuBtn where="nav" />
       </div>

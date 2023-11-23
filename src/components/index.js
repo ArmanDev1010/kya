@@ -15,6 +15,10 @@ import CoursePage from "./courses/CoursePage";
 //Navbar
 import Navbar from "./Navbar";
 
+// Main
+
+import Main from "./Main"
+
 export {
   Home,
   TopBox,
@@ -25,5 +29,6 @@ export {
   Course,
   SwiperImgs,
   CoursePage,
-  Navbar
+  Navbar,
+  Main
 };

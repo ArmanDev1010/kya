@@ -35,8 +35,8 @@ const Course = (props) => {
     <div
       className="relative w-full h-full text-white text-left overflow-x-hidden bg-no-repeat bg-cover max-desktop:bg-center"
       style={
-        (props.course === "right" && isDesktop) ||
-        (props.course === "right" && window.innerWidth >= 801)
+        (props.course === "rights" && isDesktop) ||
+        (props.course === "rights" && window.innerWidth >= 801)
           ? {
               backgroundImage: `url('${samvelrig}')`,
               backgroundColor: "#F36967",
@@ -53,8 +53,8 @@ const Course = (props) => {
               backgroundImage: `url('${armanbusmobile}')`,
               backgroundColor: "#1FBDAF",
             }
-          : (props.course === "right" && !isDesktop) ||
-            (props.course === "right" && window.innerWidth <= 801)
+          : (props.course === "rights" && !isDesktop) ||
+            (props.course === "rights" && window.innerWidth <= 801)
           ? {
               backgroundImage: `url('${samvelrigmobile}')`,
               backgroundColor: "#F36967",

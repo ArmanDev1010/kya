@@ -60,8 +60,8 @@ const TopBox = () => {
           <ul className="flex gap-7 items-center relative text-sm max-desktop:text-[13px] max-desktop:gap-3 max-small:text-[14px]">
             <li className="max-small:hidden transition-opacity ease-in-out duration-200 hover:opacity-75">
               <a href="tel:+37455500533" className="flex items-center gap-2">
-                <FiPhone size="1.6em" />
-                <span className="max-small:hidden">+374 55 50 05 33</span>
+                <FiPhone size="1.5em" />
+                <span className="max-small:hidden text-[14px]">+374 55 50 05 33</span>
               </a>
             </li>
             <li className="transition-opacity ease-in-out duration-200 hover:opacity-75">
@@ -69,8 +69,8 @@ const TopBox = () => {
                 href="https://maps.app.goo.gl/LZdzFtPiL1nAsfPNA"
                 className="flex items-center gap-2"
               >
-                <GrLocation size="1.8em" />
-                <span className="max-small:hidden">Ազատության 24/15</span>
+                <GrLocation size="1.7em" />
+                <span className="max-small:hidden text-[14px]">Ազատության 24/15</span>
               </a>
             </li>
           </ul>

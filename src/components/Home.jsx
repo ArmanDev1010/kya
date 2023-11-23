@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import { MyContext } from "../context/MyContext";
 
-import { TopBox, Menu, Navbar } from "./index";
+import { TopBox, Menu, Navbar, Main } from "./index";
 import { useLocation } from "react-router-dom";
 
 const Home = () => {
@@ -22,8 +22,7 @@ const Home = () => {
         <TopBox />
         <Menu />
         <Navbar />
-        <div className="h-screen bg-red"></div>
-        <div className="h-screen bg-red"></div>
+        <Main />
       </MyContext.Provider>
     </>
   );
