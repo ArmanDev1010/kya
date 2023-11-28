@@ -1,7 +1,11 @@
 import React, { useContext, useEffect, useState } from "react";
 import { MyContext } from "../../../context/MyContext";
 
-import { armanthumbnail, samvelthumbnail } from "../../../assets/images";
+import {
+  business_thumbnail,
+  rights_thumbnail,
+  self_knowledge_thumbnail,
+} from "../../../assets/images";
 
 import Course from "./Course";
 
@@ -37,7 +41,7 @@ const Menu = () => {
 
   return (
     <div
-      className="fixed z-[99999] h-[100vh] w-full bg-thirdly top-0 right-[-100%] transition-all ease-in-out duration-1000"
+      className="fixed z-[999999999999] h-[100vh] w-full bg-thirdly top-0 right-[-100%] transition-all ease-in-out duration-1000"
       style={is_MenuActive ? { right: "0" } : null}
     >
       <Swiper
@@ -47,7 +51,7 @@ const Menu = () => {
           disableOnInteraction: false,
         }}
         loop={true}
-        pagination={isDesktop <= 801 ? true : false}
+        pagination={isDesktop <= 1351 ? true : false}
         modules={[Autoplay, Thumbs, Pagination]}
         thumbs={{
           swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
@@ -60,21 +64,26 @@ const Menu = () => {
         <SwiperSlide>
           <Course course="rights" color="primary" />
         </SwiperSlide>
+        <SwiperSlide>
+          <Course course="self_knowledge" color="thirdly" />
+        </SwiperSlide>
       </Swiper>
       <Swiper
         onSwiper={setThumbsSwiper}
         loop={true}
-        slidesPerView={1}
-        freeMode={true}
+        slidesPerView={3}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwi tablet:w-full tablet:h-full mx-auto max-tablet:hidden"
+        className="mySwi tablet:w-full tablet:h-full mx-auto max-desktop:hidden"
       >
         <SwiperSlide>
-          <img src={armanthumbnail} alt="rigthumbnail" />
+          <img src={business_thumbnail} alt="business_thumbnail" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={samvelthumbnail} alt="rigthumbnail" />
+          <img src={rights_thumbnail} alt="rights_thumbnail" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={self_knowledge_thumbnail} alt="self_knowledge_thumbnail" />
         </SwiperSlide>
       </Swiper>
       <button

@@ -31,7 +31,7 @@ const Main = () => {
           <MainSlides color="secondary" course="rights" />
         </SwiperSlide>
         <SwiperSlide>
-          <MainSlides color="thirdly" course="" />
+          <MainSlides color="thirdly" course="self_knowledge" />
         </SwiperSlide>
       </Swiper>
     </div>

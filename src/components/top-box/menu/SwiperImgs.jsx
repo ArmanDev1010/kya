@@ -11,6 +11,8 @@ import Swiper_Slides from "./Swiper_Slides";
 const SwiperImgs = (props) => {
   const [isDesktop, setIsDesktop] = useState(window.innerWidth);
 
+  const isDesktoph = window.innerHeight;
+
   useEffect(() => {
     window.addEventListener("resize", () => setIsDesktop(window.innerWidth));
   }, [window.innerWidth]);
@@ -26,6 +28,9 @@ const SwiperImgs = (props) => {
         }}
         modules={[Autoplay, Grid]}
         className="mySwiper w-full h-full mx-auto !max-w-full"
+        style={
+          isDesktoph <= 601 && isDesktop >= 601 ? { display: "none" } : null
+        }
       >
         <SwiperSlide>
           <Swiper_Slides course={props.course} num="1" yt="XoqNVOFVeJo" />

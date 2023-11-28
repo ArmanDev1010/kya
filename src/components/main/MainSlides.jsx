@@ -3,15 +3,13 @@ import { useTranslation } from "react-i18next";
 
 import { Link } from "react-router-dom";
 
-import lilit from "../../assets/images/team/lilittest.png";
-import mane from "../../assets/images/team/manetest.png";
-import mari from "../../assets/images/team/maritest.png";
+import { lilit, mane, mari } from "../../assets/images";
 
 const MainSlides = (props) => {
   const { t } = useTranslation();
   return (
     <div className={`w-full h-full bg-${props.color}`}>
-      <div className="h-full w-full max-w-[1480px] my-0 mx-auto flex items-center justify-between px-[50px] max-big:justify-center max-desktop:justify-between max-desktop:pl-[70px] max-desktop:pr-[30px] max-medium:pl-[50px] max-tablet:flex-col max-tablet:pl-0 max-tablet:!px-6 max-tablet:!pt-10 overflow-hidden">
+      <div className="h-full w-full max-w-[1480px] my-0 mx-auto flex items-center justify-between px-[50px] max-big:justify-center max-desktop:justify-between max-desktop:pl-[70px] max-desktop:pr-[30px] max-medium:pl-[50px] max-tablet:flex-col max-tablet:pl-0 max-tablet:!px-4 max-tablet:!pt-10 overflow-hidden">
         <div
           style={
             props.color == "primary"
@@ -21,7 +19,7 @@ const MainSlides = (props) => {
               : null
           }
         >
-          <h1 className="text-5xl font-semibold mb-10 !leading-[3.5rem] max-medium:text-4xl max-tablet:!leading-[3.2rem]  max-tablet:mb-6">
+          <h1 className="text-5xl font-semibold mb-10 !leading-[3.5rem] max-medium:text-4xl max-tablet:!leading-[3.2rem] max-tablet:mb-4 max-tablet:text-3xl">
             {t(`top_box.${props.course}.title`)}
           </h1>
           <p className="text-xl max-w-[700px] mb-10 leading-[2rem] max-medium:text-base max-tablet:mb-7">

@@ -6,7 +6,7 @@ const Swiper_Slides = (props) => {
       {props.course === "business" ? (
         <a href={`https://www.youtube.com/watch?v=${props.yt}`} target="_blank">
           <div
-            className="w-full h-full fade bus_fade aspect-video"
+            className="w-full h-full fade bus_fade aspect-video cursor-pointer pointer-events-none"
             style={{
               background: `url(/src/assets/images/academy/bus/vid${props.num}.jpg)`,
               backgroundPosition: "center",
@@ -37,6 +37,18 @@ const Swiper_Slides = (props) => {
             className="w-full h-full fade rig_fade"
             style={{
               background: `url(/src/assets/images/academy/rig/rig${props.num}.jpg)`,
+              backgroundPosition: props.num == 2 ? "top" : "center",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+            }}
+          ></div>
+        </a>
+      ) : props.course === "self_knowledge" ? (
+        <a href="https://www.facebook.com/kyacademyerevan" target="_blank">
+          <div
+            className="w-full h-full fade rig_fade"
+            style={{
+              background: `url(/src/assets/images/academy/self/self${props.num}.jpg)`,
               backgroundPosition: props.num == 2 ? "top" : "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",

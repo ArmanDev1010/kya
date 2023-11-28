@@ -117,7 +117,7 @@ body {
   transform: translateX(-50%);
   overflow-y: visible;
   min-height: 180px;
-  padding-right: 10px !important;
+  padding-right: 28px !important;
   max-height: 180px;
 }
 
@@ -125,6 +125,7 @@ body {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
+  align-items: flex-end;
 }
 
 .myMainSwiper .swiper-slide {
@@ -136,9 +137,9 @@ body {
 .mySwi .swiper-slide {
   background-size: cover;
   background-position: center;
-  min-width: 350px;
-  width: 350px !important;
-  height: 100%;
+  min-width: 320px;
+  width: 320px !important;
+  height: 85%;
   opacity: 0.8;
   border-radius: 30px;
   cursor: pointer;
@@ -250,9 +251,6 @@ body {
     max-height: 200px !important;
     height: 200px;
     margin-bottom: 20px !important;
-  }
-  #menu_btn_icons svg path {
-    stroke: white;
   }
 }
 

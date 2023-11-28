@@ -37,6 +37,10 @@ const App = () => {
         <Route path="/courses">
           <Route path="business" element={<CoursePage course="business" />} />
           <Route path="rights" element={<CoursePage course="rights" />} />
+          <Route
+            path="self_knowledge"
+            element={<CoursePage course="self_knowledge" />}
+          />
         </Route>
       </Routes>
     </div>
