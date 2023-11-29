@@ -63,7 +63,7 @@ const Course = (props) => {
         className="h-full w-full"
         id="course"
         style={
-          isDesktoph <= 601 && isDesktopw >= 601 ? { overflow: "hidden" } : null
+          isDesktoph >= 601 && isDesktopw >= 601 ? { overflow: "hidden" } : null
         }
       >
         <div className="relative z-[99] px-20 py-20 max-btablet:p-14 max-tablet:p-10 w-full max-small:p-5 max-btablet:!py-16">
