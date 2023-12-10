@@ -90,17 +90,32 @@ body {
 }
 
 .mySwp .swiper-pagination-bullet,
-.myMainSwiper .swiper-pagination-bullet {
+.myMainSwiper .swiper-pagination-bullet,
+.myMainSwiperMedia .swiper-pagination-bullet {
   background: white !important;
 }
 
-.myMainSwiper .swiper-pagination-bullet {
+.myMainSwiperMedia .swiper-pagination-bullet {
+  width: 60px !important;
+  height: 2px !important;
+  border-radius: 0;
+}
+
+.myMainSwiper .swiper-pagination-bullet,
+.myMainSwiperMedia .swiper-pagination-bullet {
   margin: 0 10px !important;
 }
 
 .myMainSwiper .swiper-button-next::after,
-.myMainSwiper .swiper-button-prev::after {
+.myMainSwiper .swiper-button-prev::after,
+.myMainSwiperMedia .swiper-button-next::after,
+.myMainSwiperMedia .swiper-button-prev::after {
   color: white !important;
+}
+
+.myMainSwiperMedia .swiper-button-next::after,
+.myMainSwiperMedia .swiper-button-prev::after {
+  font-size: 20px;
 }
 
 .myMainSwiper .swiper-button-next {
@@ -108,6 +123,13 @@ body {
 }
 .myMainSwiper .swiper-button-prev {
   left: 40px !important;
+}
+
+.myMainSwiperMedia .swiper-button-next {
+  right: 10px !important;
+}
+.myMainSwiperMedia .swiper-button-prev {
+  left: 10px !important;
 }
 
 .mySwi {
@@ -202,7 +224,8 @@ body {
 }
 
 @media screen and (max-width: 1350px) {
-  .swiper-button-prev, .swiper-button-next {
+  .swiper-button-prev:not(.myMainSwiperMedia .swiper-button-prev),
+  .swiper-button-next:not(.myMainSwiperMedia .swiper-button-next) {
     display: none;
   }
 }
@@ -267,6 +290,12 @@ body {
   #course button {
     font-size: 15px;
     padding: 7px 15px;
+  }
+  .myMainSwiperMedia
+    .swiper-button-prev,
+    .myMainSwiperMedia
+    .swiper-button-next {
+    display: none;
   }
 }
 

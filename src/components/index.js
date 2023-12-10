@@ -16,8 +16,10 @@ import CoursePage from "./courses/CoursePage";
 import Navbar from "./Navbar";
 
 // Main
-
 import Main from "./Main"
+
+// Media
+import Media from "./medialibrary/Media";
 
 export {
   Home,
@@ -30,5 +32,6 @@ export {
   SwiperImgs,
   CoursePage,
   Navbar,
-  Main
+  Main,
+  Media
 };

@@ -10,7 +10,7 @@ import MainSlides from "./main/MainSlides";
 
 const Main = () => {
   return (
-    <div className="w-full h-[600px] max-big:!h-[500px] overflow-hidden bg-primary rounded-bl-[200px] relative max-btablet:!h-[450px] max-btablet:rounded-bl-[100px] max-tablet:!h-[600px]">
+    <div className="w-full h-[600px] max-big:!h-[500px] mb-24 max-medium:mb-16 overflow-hidden bg-primary rounded-bl-[200px] relative max-btablet:!h-[450px] max-btablet:rounded-bl-[100px] max-tablet:!h-[600px]">
       <Swiper
         slidesPerView={1}
         spaceBetween={0}
