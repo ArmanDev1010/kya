@@ -10,7 +10,8 @@ import MediaLink from "./MediaLink";
 
 const Media = () => {
   return (
-    <div className="flex items-center h-[500px] px-12 mb-24 flex justify-center max-big:h-[400px] max-medium:mb-16 max-medium:h-[600px] max-medium:px-6 max-stablet:h-auto max-phone:h-[300px] max-phone:px-0">
+    <div className="flex items-center h-[500px] px-12 mb-24 flex justify-center max-big:h-[400px] max-medium:mb-16 max-medium:h-[600px] max-medium:px-6 max-stablet:h-auto max-phone:h-[300px] max-phone:px-0"
+    id="media">
       <div className="max-w-[1480px] w-full h-full flex gap-4 max-big:max-w-[1280px] max-medium:flex-col">
         <div className="max-w-full w-[60%] max-medium:w-full h-full max-medium:min-h-[350px] max-stablet:min-h-0 max-stablet:h-[280px] max-phone:h-full">
           <Swiper

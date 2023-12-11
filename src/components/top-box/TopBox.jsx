@@ -28,7 +28,6 @@ const TopBox = () => {
             (text, key) => (
               <li
                 key={key}
-                id={text}
                 onClick={() =>
                   navigate("/", { state: { targetId: `${text}` } })
                 }

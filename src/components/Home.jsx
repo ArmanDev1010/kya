@@ -14,6 +14,7 @@ const Home = () => {
 
   if (el) {
     el.scrollIntoView();
+    console.log(el)
   }
 
   return (
