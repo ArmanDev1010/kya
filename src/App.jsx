@@ -33,7 +33,7 @@ const App = () => {
   return (
     <div className="font-montserrat">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/kya/" element={<Home />} />
         <Route path="/courses">
           <Route path="business" element={<CoursePage course="business" />} />
           <Route path="rights" element={<CoursePage course="rights" />} />
