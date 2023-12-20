@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { MyContext } from "../context/MyContext";
 
-import { TopBox, Menu, Navbar, Main, Media } from "./index";
+import { TopBox, Menu, Navbar, Main, Media, Advantages } from "./index";
 import { useLocation } from "react-router-dom";
 
 const Home = () => {
@@ -25,6 +25,7 @@ const Home = () => {
         <Navbar />
         <Main />
         <Media />
+        <Advantages />
       </MyContext.Provider>
     </>
   );

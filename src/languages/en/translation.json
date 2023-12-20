@@ -1,6 +1,6 @@
 {
     "weather_forcast_for": "Weather forecast for",
-    "top_box":      {  
+    "top_box": {  
         "media": "Media",
         "reviews": "Reviews",
         "story": "Our Story",
@@ -38,6 +38,29 @@
         "courses": "Courses",
         "contact": "Contact",
         "sign": "Register"
+    },
+    "advantages": {
+        "title": "What <span class='never'>results</span> we provide",
+        "knowledge": {
+            "title": "KNOWLEDGE NOT PROVIDED AT SCHOOL",
+            "paragraph": "interesting informative and up-to-date case"
+        },
+        "surrounding": {
+            "title": "MOTIVATED ENVIRONMENT",
+            "paragraph": "access to student and graduate life"
+        },
+        "expert": {
+            "title": "PROFESSIONAL DIRECTION",
+            "paragraph": "help in choosing the right profession"
+        },
+        "visit": {
+            "title": "VISIT ORGANIZATIONS",
+            "paragraph": "insight into industry leaders and leading companies"
+        },
+        "guest": {
+            "title": "MEETING WITH GUESTS",
+            "paragraph": "personal contact with established professionals and entrepreneurs"
+        }
     }
 }
   

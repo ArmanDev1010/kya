@@ -23,6 +23,8 @@ import self_knowledge_mobile from "./team/business_mobile.png";
 import lilit from "./team/lilitmain.png";
 import mane from "./team/manemain.png";
 import mari from "./team/marimain.png";
+import pointing from "./team/poiting.png";
+import booking from "./team/booking.png";
 
 export {
   logo,
@@ -50,4 +52,6 @@ export {
   lilit,
   mane,
   mari,
+  pointing,
+  booking,
 };

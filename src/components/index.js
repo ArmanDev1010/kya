@@ -21,6 +21,9 @@ import Main from "./Main"
 // Media
 import Media from "./medialibrary/Media";
 
+// Advantages
+import Advantages from "./advatages/Advantages";
+
 export {
   Home,
   TopBox,
@@ -33,5 +36,6 @@ export {
   CoursePage,
   Navbar,
   Main,
-  Media
+  Media,
+  Advantages
 };

@@ -206,6 +206,13 @@ body {
   box-shadow: 0 10px 20px rgba(162, 102, 234, 0.1);
 }
 
+.never {
+  background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61425085fefcfd2c00b1be93_Vector.svg);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 @media screen and (min-width: 1600px) {
   .mySwi {
     min-height: 220px !important;
@@ -291,10 +298,8 @@ body {
     font-size: 15px;
     padding: 7px 15px;
   }
-  .myMainSwiperMedia
-    .swiper-button-prev,
-    .myMainSwiperMedia
-    .swiper-button-next {
+  .myMainSwiperMedia .swiper-button-prev,
+  .myMainSwiperMedia .swiper-button-next {
     display: none;
   }
 }
