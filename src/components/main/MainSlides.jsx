@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 
 import { Link } from "react-router-dom";
 
-import { lilit, mane, mari } from "../../assets/images";
+import { lilit, mane, mari } from "../../assets";
 
 const MainSlides = (props) => {
   const { t } = useTranslation();

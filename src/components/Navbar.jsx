@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { logo } from "../assets/images";
+import { logo } from "../assets";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -17,7 +17,9 @@ const Navbar = () => {
   });
 
   return (
-    <div className={`headerMain ${scroll ? "sticky bg-white" : "py-4 bg-white"}`}>
+    <div
+      className={`headerMain ${scroll ? "sticky bg-white" : "py-4 bg-white"}`}
+    >
       <div className="max-w-[1480px] w-full px-12 flex items-center justify-between mx-auto my-0 max-desktop:px-7 max-phone:px-6">
         <img
           src={logo}

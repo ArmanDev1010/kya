@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { pointing, booking } from "../../assets/images";
+import { pointing, booking } from "../../assets";
 
 const Advantages = () => {
   const { t } = useTranslation();

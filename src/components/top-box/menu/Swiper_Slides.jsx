@@ -8,7 +8,7 @@ const Swiper_Slides = (props) => {
           <div
             className="w-full h-full fade bus_fade aspect-video cursor-pointer pointer-events-none"
             style={{
-              background: `url(/src/assets/images/academy/bus/vid${props.num}.jpg)`,
+              background: `url(/src/assets/academy/bus/vid${props.num}.jpg)`,
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -36,7 +36,7 @@ const Swiper_Slides = (props) => {
           <div
             className="w-full h-full fade rig_fade"
             style={{
-              background: `url(/src/assets/images/academy/rig/rig${props.num}.jpg)`,
+              background: `url(/src/assets/academy/rig/rig${props.num}.jpg)`,
               backgroundPosition: props.num == 2 ? "top" : "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -48,7 +48,7 @@ const Swiper_Slides = (props) => {
           <div
             className="w-full h-full fade rig_fade"
             style={{
-              background: `url(/src/assets/images/academy/self/self${props.num}.jpg)`,
+              background: `url(/src/assets/academy/self/self${props.num}.jpg)`,
               backgroundPosition: props.num == 2 ? "top" : "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",

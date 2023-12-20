@@ -5,7 +5,7 @@ import {
   business_thumbnail,
   rights_thumbnail,
   self_knowledge_thumbnail,
-} from "../../../assets/images";
+} from "../../../assets";
 
 import Course from "./Course";
 

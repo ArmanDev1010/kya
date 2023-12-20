@@ -35,7 +35,7 @@ const Course = (props) => {
         (props.course && isDesktop) ||
         (props.course && window.innerWidth >= 801)
           ? {
-              backgroundImage: `url(/src/assets/images/team/${props.course}.png)`,
+              backgroundImage: `url(/src/assets/team/${props.course}.png)`,
               backgroundColor: `${
                 props.course === "business"
                   ? "#1FBDAF"
@@ -47,7 +47,7 @@ const Course = (props) => {
           : (props.course && !isDesktop) ||
             (props.course && window.innerWidth <= 801)
           ? {
-              backgroundImage: `url(/src/assets/images/team/${props.course}_mobile.png)`,
+              backgroundImage: `url(/src/assets/team/${props.course}_mobile.png)`,
               backgroundColor: `${
                 props.course === "business"
                   ? "#1FBDAF"
