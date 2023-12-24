@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { logo } from "../assets";
+import { logo } from "../../assets";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-import { MenuBtn } from "./index";
+import { MenuBtn } from "../index";
 
 const Navbar = () => {
   const { t } = useTranslation();

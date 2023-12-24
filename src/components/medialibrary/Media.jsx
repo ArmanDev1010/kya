@@ -11,7 +11,7 @@ import MediaLink from "./MediaLink";
 const Media = () => {
   return (
     <div
-      className="flex items-center h-[500px] px-12 mb-24 flex justify-center max-big:h-[400px] max-medium:mb-16 max-medium:h-[600px] max-medium:px-6 max-stablet:h-auto max-phone:h-[300px] max-phone:px-0"
+      className="flex items-center h-[500px] px-12 my-24 flex justify-center max-big:h-[400px] max-medium:my-16 max-medium:h-[600px] max-medium:px-6 max-stablet:h-auto max-phone:h-[300px] max-phone:px-0"
       id="media"
     >
       <div className="max-w-[1480px] w-full h-full flex gap-4 max-big:max-w-[1280px] max-medium:flex-col">

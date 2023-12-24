@@ -13,16 +13,19 @@ import SwiperImgs from "./top-box/menu/SwiperImgs";
 import CoursePage from "./courses/CoursePage";
 
 //Navbar
-import Navbar from "./Navbar";
+import Navbar from "./navbar/Navbar";
 
 // Main
-import Main from "./Main"
+import Main from "./Main";
 
 // Media
 import Media from "./medialibrary/Media";
 
 // Advantages
 import Advantages from "./advatages/Advantages";
+
+// Testimonials
+import Testimonials from "./testimonials/Testimonials";
 
 export {
   Home,
@@ -37,5 +40,6 @@ export {
   Navbar,
   Main,
   Media,
-  Advantages
+  Advantages,
+  Testimonials
 };

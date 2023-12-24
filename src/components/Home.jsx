@@ -2,7 +2,15 @@ import React, { useState } from "react";
 
 import { MyContext } from "../context/MyContext";
 
-import { TopBox, Menu, Navbar, Main, Media, Advantages } from "./index";
+import {
+  TopBox,
+  Menu,
+  Navbar,
+  Main,
+  Media,
+  Advantages,
+  Testimonials,
+} from "./index";
 import { useLocation } from "react-router-dom";
 
 const Home = () => {
@@ -14,7 +22,7 @@ const Home = () => {
 
   if (el) {
     el.scrollIntoView();
-    console.log(el)
+    console.log(el);
   }
 
   return (
@@ -26,6 +34,7 @@ const Home = () => {
         <Main />
         <Media />
         <Advantages />
+        <Testimonials />
       </MyContext.Provider>
     </>
   );
