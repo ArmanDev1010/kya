@@ -5,7 +5,7 @@ import { initReactI18next } from "react-i18next";
 
 import { translationAM, translationEN, translationRU } from "./languages";
 
-import { CoursePage, Home } from "./components";
+import { About, CoursePage, Home } from "./components";
 import { Route, Routes } from "react-router-dom";
 
 const resources = {
@@ -42,6 +42,7 @@ const App = () => {
             element={<CoursePage course="self_knowledge" />}
           />
         </Route>
+        <Route path="about" element={<About />} />
       </Routes>
     </div>
   );

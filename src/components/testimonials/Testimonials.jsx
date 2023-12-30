@@ -43,9 +43,9 @@ const Testimonials = () => {
         <SwiperSlide>
           <Testimonial num="5" />
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <Testimonial num="6" />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </div>
   );

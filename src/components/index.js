@@ -12,6 +12,9 @@ import SwiperImgs from "./top-box/menu/SwiperImgs";
 // Courses
 import CoursePage from "./courses/CoursePage";
 
+// About
+import About from "./about/About";
+
 //Navbar
 import Navbar from "./navbar/Navbar";
 
@@ -45,5 +48,6 @@ export {
   Media,
   Advantages,
   Testimonials,
-  History
+  History,
+  About
 };
