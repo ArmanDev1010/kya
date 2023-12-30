@@ -9,16 +9,16 @@ const Testimonial = (props) => {
 
   return (
     <div
-      className="flex !h-[300px]"
+      className="flex !h-[300px] max-small:flex-col max-small:!h-auto"
       style={{ boxShadow: "rgba(0,0,0,0.05) 0px 0px 0px 1px" }}
     >
       <div
         style={{
           backgroundImage: `url(${t(`testimonial.${props.num}.mainIMG`)})`,
         }}
-        className="bg-no-repeat bg-cover bg-center h-full flex-[0.4] max-small:flex-[0]"
+        className="bg-no-repeat bg-cover bg-center h-full flex-[0.4] max-small:min-h-[250px]"
       ></div>
-      <div className="p-8 pt-4 bg-white flex-[0.6] max-small:flex-[1]">
+      <div className="p-8 pt-4 bg-white flex-[0.6] max-small:min-h-[300px]">
         <div className="flex gap-4">
           <div
             style={{

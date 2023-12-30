@@ -12,7 +12,7 @@ const Advantages = () => {
 
   return (
     <div
-      className="mb-24 px-12 font-[sans-serif] flex justify-center items-center gap-[150px] max-desktop:flex-col max-desktop:gap-[40px] max-stablet:px-8"
+      className="mb-24 px-12 font-[sans-serif] flex justify-center items-center gap-[150px] max-desktop:flex-col max-desktop:gap-[40px] max-medium:mb-16 max-stablet:px-8"
       id="advantages"
     >
       <img src={isDesktop >= 1351 ? pointing : booking} alt="pointing" />

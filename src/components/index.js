@@ -16,7 +16,7 @@ import CoursePage from "./courses/CoursePage";
 import Navbar from "./navbar/Navbar";
 
 // Main
-import Main from "./Main";
+import Main from "./main/Main";
 
 // Media
 import Media from "./medialibrary/Media";
@@ -26,6 +26,9 @@ import Advantages from "./advatages/Advantages";
 
 // Testimonials
 import Testimonials from "./testimonials/Testimonials";
+
+// History
+import History from "./history/History";
 
 export {
   Home,
@@ -41,5 +44,6 @@ export {
   Main,
   Media,
   Advantages,
-  Testimonials
+  Testimonials,
+  History
 };

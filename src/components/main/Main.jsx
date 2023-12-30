@@ -6,7 +6,7 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-import MainSlides from "./main/MainSlides";
+import MainSlides from "./MainSlides";
 
 const Main = () => {
   return (
@@ -30,9 +30,9 @@ const Main = () => {
         <SwiperSlide>
           <MainSlides color="secondary" course="rights" />
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <MainSlides color="thirdly" course="self_knowledge" />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </div>
   );
