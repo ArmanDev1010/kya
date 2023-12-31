@@ -22,8 +22,7 @@ const Home = () => {
   const el = document.getElementById(targetId);
 
   if (el) {
-    el.scrollIntoView();
-    console.log(el);
+    el.scrollIntoView({ block: "center" });
   }
 
   return (

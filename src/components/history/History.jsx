@@ -6,7 +6,7 @@ const History = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="flex justify-center items-center mb-24 gap-36 max-desktop:gap-16 max-medium:mb-16 max-btablet:flex-col-reverse max-btablet:px-8 max-phone:gap-12" id="history">
+    <div className="flex justify-center items-center mb-24 gap-36 max-desktop:gap-16 max-medium:mb-16 max-btablet:flex-col-reverse max-btablet:px-8 max-phone:gap-12" id="story">
       <div className="text-center max-w-[580px] max-desktop:max-w-[450px]">
         <h3 className="text-4xl font-bold text-[#222] mb-9 max-phone:text-3xl max-phone:mb-6">
           {t("history.title")}
