@@ -12,7 +12,7 @@ const Links = () => {
 
   const linkClick = (text) => {
     navigate("/", { state: { targetId: `${text}` } });
-    setIs_MenuActive((current) => !current);
+    setIs_MenuActive((current) => (current === true ? false : null));
   };
 
   return (
