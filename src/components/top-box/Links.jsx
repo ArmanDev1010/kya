@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
+import { MyContext } from "../../context/MyContext";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 
 const Links = () => {
+  const { setIs_MenuActive, isDesktop } = useContext(MyContext);
+
   const navigate = useNavigate();
 
   const { t } = useTranslation();
+
+  const linkClick = (text) => {
+    navigate("/", { state: { targetId: `${text}` } });
+    setIs_MenuActive((current) => !current);
+  };
 
   return (
     <ul
@@ -15,26 +23,25 @@ const Links = () => {
       {["about", "courses", "contact"].map((text, key) => (
         <li
           key={key}
-          onClick={() => {
-            navigate("/", { state: { targetId: `${text}` } });
-          }}
-          className="transition-opacity ease-in-out duration-200 hover:opacity-75 cursor-pointer font-semibold max-tablet:border-b max-tablet:px-10 max-tablet:py-5"
+          onClick={() => linkClick(text)}
+          className="hidden transition-opacity ease-in-out duration-200 hover:opacity-75 cursor-pointer font-semibold 
+          max-tablet:block max-tablet:border-b max-tablet:px-10 max-tablet:py-5"
         >
           {t(`navbar.${text}`)}
         </li>
       ))}
-      {["media", "reviews", "advantages"].map(
-        (text, key) => (
+      {["media", "reviews", "story", "advantages", "partners", "team"]
+        .slice(0, isDesktop >= 801 ? 6 : 4)
+        .map((text, key) => (
           <li
             key={key}
-            onClick={() => navigate("/", { state: { targetId: `${text}` } })}
-            className="transition-opacity ease-in-out duration-200 hover:opacity-75 cursor-pointer 
-            max-tablet:border-b max-tablet:px-10 max-tablet:py-5"
+            onClick={() => linkClick(text)}
+            className={`${text} transition-opacity ease-in-out duration-200 hover:opacity-75 cursor-pointer 
+            max-tablet:border-b max-tablet:px-10 max-tablet:py-5`}
           >
             {t(`top_box.${text}`)}
           </li>
-        )
-      )}
+        ))}
     </ul>
   );
 };

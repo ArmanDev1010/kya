@@ -1,14 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
 import { useTranslation } from "react-i18next";
 import { pointing, booking } from "../../assets";
+import { MyContext } from "../../context/MyContext";
 
 const Advantages = () => {
+  const { isDesktop } = useContext(MyContext);
   const { t } = useTranslation();
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth);
-
-  useEffect(() => {
-    window.addEventListener("resize", () => setIsDesktop(window.innerWidth));
-  }, [window.innerWidth]);
 
   return (
     <div

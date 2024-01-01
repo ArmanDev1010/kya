@@ -1,18 +1,12 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import { MyContext } from "../../../context/MyContext";
 
 const MenuBtn = (props) => {
-  const { setIs_MenuActive } = useContext(MyContext);
-
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth);
+  const { setIs_MenuActive, isDesktop } = useContext(MyContext);
 
   const menuSlide = () => {
     setIs_MenuActive((current) => !current);
   };
-
-  useEffect(() => {
-    window.addEventListener("resize", () => setIsDesktop(window.innerWidth));
-  }, [window.innerWidth]);
 
   return (
     <div

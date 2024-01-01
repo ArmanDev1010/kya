@@ -260,8 +260,8 @@ body {
   #course h1 {
     font-size: max(2vw, 5vw);
   }
-  li#partners,
-  li#team {
+  li.partners,
+  li.team {
     display: none;
   }
 }

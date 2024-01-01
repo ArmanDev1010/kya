@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -7,13 +7,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import Testimonial from "./Testimonial";
+import { MyContext } from "../../context/MyContext";
 
 const Testimonials = () => {
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth);
-
-  useEffect(() => {
-    window.addEventListener("resize", () => setIsDesktop(window.innerWidth));
-  }, [window.innerWidth]);
+  const { isDesktop } = useContext(MyContext);
 
   return (
     <div className="mb-24 px-12 max-desktop:px-0 max-medium:mb-16" id="reviews">

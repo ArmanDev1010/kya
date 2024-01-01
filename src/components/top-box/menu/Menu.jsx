@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import { MyContext } from "../../../context/MyContext";
 
 import {
@@ -29,17 +29,12 @@ import "swiper/css/pagination";
 import Links from "../Links";
 
 const Menu = () => {
-  const { is_MenuActive, setIs_MenuActive } = useContext(MyContext);
+  const { is_MenuActive, setIs_MenuActive, isDesktop } = useContext(MyContext);
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth);
 
   const menuSlide = () => {
     setIs_MenuActive((current) => !current);
   };
-
-  useEffect(() => {
-    window.addEventListener("resize", () => setIsDesktop(window.innerWidth));
-  }, [window.innerWidth]);
 
   return (
     <div
