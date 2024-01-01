@@ -1,50 +1,56 @@
-import React, { useEffect, useState } from "react";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Grid } from "swiper/modules";
-
-import "swiper/css";
-import "swiper/css/grid";
-
-import Swiper_Slides from "./Swiper_Slides";
+import React from "react";
 
 const SwiperImgs = (props) => {
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth);
-
-  const isDesktoph = window.innerHeight;
-
-  useEffect(() => {
-    window.addEventListener("resize", () => setIsDesktop(window.innerWidth));
-  }, [window.innerWidth]);
-
   return (
     <div id="bottom">
-      <Swiper
-        slidesPerView={isDesktop <= 601 ? 1 : 2}
-        spaceBetween={10}
-        autoplay={{
-          delay: 2000,
-          disableOnInteraction: false,
-        }}
-        modules={[Autoplay, Grid]}
-        className="mySwiper w-full h-full mx-auto !max-w-full"
-        style={
-          isDesktoph <= 601 && isDesktop >= 601 ? { display: "none" } : null
-        }
-      >
-        <SwiperSlide>
-          <Swiper_Slides course={props.course} num="1" yt="XoqNVOFVeJo" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Swiper_Slides course={props.course} num="2" yt="mlv_omOvjzc" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Swiper_Slides course={props.course} num="3" yt="RqC72nuN3d4" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Swiper_Slides course={props.course} num="4" yt="Y8BUPgKt1b8" />
-        </SwiperSlide>
-      </Swiper>
+      <div className="flex gap-2">
+        <a
+          href={`https://www.youtube.com/watch?v=${
+            props.course == "business"
+              ? "G9AIuLPQZ0s"
+              : props.course == "rights"
+              ? "ta-OQaITDN0"
+              : "hiGbBS6kZcg"
+          }`}
+        >
+          <iframe
+            width="100%"
+            height="100%"
+            src={`https://www.youtube.com/embed/${
+              props.course == "business"
+                ? "G9AIuLPQZ0s"
+                : props.course == "rights"
+                ? "ta-OQaITDN0"
+                : "hiGbBS6kZcg"
+            }?si=21QTzR4dzckCZ4Ys`}
+            title="YouTube video player"
+            className="pointer-events-none rounded-3xl"
+          ></iframe>
+        </a>
+        <a
+          href={`https://www.youtube.com/watch?v=${
+            props.course == "business"
+              ? "0kqFVXG5YuI"
+              : props.course == "rights"
+              ? "aeAOabWLfHY"
+              : "mlv_omOvjzc"
+          }`}
+        >
+          <iframe
+            width="100%"
+            height="100%"
+            src={`https://www.youtube.com/embed/${
+              props.course == "business"
+                ? "0kqFVXG5YuI"
+                : props.course == "rights"
+                ? "aeAOabWLfHY"
+                : "mlv_omOvjzc"
+            }?si=21QTzR4dzckCZ4Ys`}
+            title="YouTube video player"
+            className="pointer-events-none rounded-3xl"
+          ></iframe>
+        </a>
+      </div>
     </div>
   );
 };
