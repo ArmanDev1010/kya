@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { MyContext } from "../../context/MyContext";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Links = () => {
   const { setIs_MenuActive, isDesktop } = useContext(MyContext);
@@ -20,7 +20,13 @@ const Links = () => {
       className="flex gap-4 text-[14px] max-desktop:text-[13px] font-semibold 
     max-tablet:flex-col max-tablet:text-2xl max-tablet:gap-0 max-phone:text-xl"
     >
-      {["about", "courses", "contact"].map((text, key) => (
+      <li
+        className="hidden transition-opacity ease-in-out duration-200 hover:opacity-75 cursor-pointer font-semibold 
+          max-tablet:block max-tablet:border-b max-tablet:px-10 max-tablet:py-5"
+      >
+        <Link to={`about`}>{t(`navbar.about`)}</Link>
+      </li>
+      {["courses", "contact"].map((text, key) => (
         <li
           key={key}
           onClick={() => linkClick(text)}

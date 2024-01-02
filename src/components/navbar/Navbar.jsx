@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { logo } from "../../assets";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import { MenuBtn } from "../index";
@@ -29,7 +29,10 @@ const Navbar = () => {
           }`}
         />
         <ul className="flex gap-12 text-[17px] max-btablet:gap-8 max-btablet:text-base max-stablet:hidden">
-          {["about", "courses", "contact"].map((text, key) => (
+          <li className="transition-opacity ease-in-out duration-200 hover:opacity-75 cursor-pointer font-semibold">
+            <Link to={`about`}>{t(`navbar.about`)}</Link>
+          </li>
+          {["courses", "contact"].map((text, key) => (
             <li
               key={key}
               onClick={() => {
