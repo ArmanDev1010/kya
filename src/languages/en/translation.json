@@ -72,25 +72,25 @@
         "2": {
             "name": "Margarita Khojoyan",
             "parent": "/src/assets/parents/p2.jpg",
-            "paragraph": "Thanks to KY academy. Wonderful school, wonderful teachers, program, approach..... Everything is of such a high level and quality that you don't even know what to say 👍👍👍 During their attendance, the children learned so many interesting things that even many, many adults wouldn't be bothered to know In short, we recommend it to everyone 👍",
+            "paragraph": "Thanks to <span style='color: #F36967;font-weight: 600'>KY academy</span>. Wonderful school, wonderful teachers, program, approach..... Everything is of such a high level and quality that you don't even know what to say 👍👍👍 During their attendance, the children learned so many interesting things that even many, many adults wouldn't be bothered to know In short, we recommend it to everyone 👍",
             "mainIMG": "/src/assets/parents/m2.jpg"
         },
         "3": {
             "name": "Hovhannes Khacheryan",
             "parent": "/src/assets/parents/p3.jpg",
-            "paragraph": "I want to thank the best teachers of KY academy for interesting courses, thematic gatherings and a good environment. Everything starts with education",
+            "paragraph": "I want to thank the best teachers of <span style='color: #F36967;font-weight: 600'>KY academy</span> for interesting courses, thematic gatherings and a good environment. Everything starts with education",
             "mainIMG": "/src/assets/parents/m3.jpg"
         },
         "4": {
             "name": "Alla Grigoryan",
             "parent": "/src/assets/parents/p4.jpg",
-            "paragraph": "I definitely recommend attending KY academy , in a short time they teach skills that cannot be learned either at school, on the street, or at home, children get financial knowledge from an early age, learn to work in a team, and know success many secrets to achieve.",
+            "paragraph": "I definitely recommend attending <span style='color: #F36967;font-weight: 600'>KY academy</span> , in a short time they teach skills that cannot be learned either at school, on the street, or at home, children get financial knowledge from an early age, learn to work in a team, and know success many secrets to achieve.",
             "mainIMG": "/src/assets/parents/m4.jpg"
         },
         "5": {
             "name": "Gayane Movsesyan",
             "parent": "/src/assets/parents/p5.jpg",
-            "paragraph": "As a result of studying at KY academy for two years, my child was able to start his own business, earn money for the first time, and also initiate an important educational program. Thank you very much to the school staff and I definitely recommend the school if you want your child to gain really useful knowledge and skills that will be a lifelong companion. Special thanks to Lilit Vatoyan, founder of the school, for her dedicated and professional work. It's never too early",
+            "paragraph": "As a result of studying at <span style='color: #F36967;font-weight: 600'>KY academy</span> for two years, my child was able to start his own business, earn money for the first time, and also initiate an important educational program. Thank you very much to the school staff and I definitely recommend the school if you want your child to gain really useful knowledge and skills that will be a lifelong companion. Special thanks to Lilit Vatoyan, founder of the school, for her dedicated and professional work. It's never too early",
             "mainIMG": "/src/assets/parents/m5.jpg"
         }
     },

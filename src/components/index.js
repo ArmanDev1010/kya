@@ -33,6 +33,9 @@ import Testimonials from "./testimonials/Testimonials";
 // History
 import History from "./history/History";
 
+// Partners
+import Partners from "./partners/Partners";
+
 export {
   Home,
   TopBox,
@@ -49,5 +52,6 @@ export {
   Advantages,
   Testimonials,
   History,
-  About
+  About,
+  Partners,
 };

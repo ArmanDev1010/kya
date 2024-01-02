@@ -37,7 +37,7 @@ const Testimonial = (props) => {
             </ul>
           </div>
         </div>
-        <p className="elip mt-5">{t(`testimonial.${props.num}.paragraph`)}</p>
+        <p className="elip mt-5" dangerouslySetInnerHTML={{ __html: t(`testimonial.${props.num}.paragraph`) }}></p>
       </div>
     </div>
   );
