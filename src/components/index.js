@@ -36,6 +36,9 @@ import History from "./history/History";
 // Partners
 import Partners from "./partners/Partners";
 
+// Team
+import Team from "./team/Team";
+
 export {
   Home,
   TopBox,
@@ -54,4 +57,5 @@ export {
   History,
   About,
   Partners,
+  Team,
 };

@@ -104,6 +104,55 @@
         "title": "Partners",
         "paragraph": "Become a Partner of KY academy and let's go together to a colorful new reality. By becoming a member of the KY family, you will enter a modern and unique world. We are always open for interesting proposals and cooperations.",
         "btn": "Contact"
+    },
+    "team": {
+        "title": "Our Team",
+        "pretitle": "Behind every success is a Strong Team",
+        "lilit": {
+            "name": "Lilit Vatoyan",
+            "position": "Founder",
+            "social": "lilit-vatoyan/"
+        },
+        "garegin": {
+            "name": "Garegin Xachatryan",
+            "position": "Operational Officer",
+            "social": "garegin-khachatryan-42591989/"
+        },
+        "arman": {
+            "name": "Arman Minasyan",
+            "position": "Business trainer",
+            "social": "arman-minassian-253a93109/"
+        },
+        "samvel": {
+            "name": "Samvel Jabaxyan",
+            "position": "Law Trainer",
+            "social": "samvel-jabaghyan-60b8a3183/"
+        },
+        "armans": {
+            "name": "Arman Sargsyan",
+            "position": "Psychologist/trainer",
+            "social": ""
+        },
+        "armanm": {
+            "name": "Arman Manukyan",
+            "position": "Web Developer",
+            "social": "arman-manukyan-77114b265/"
+        },
+        "mari": {
+            "name": "Mari Simonyan",
+            "position": "Assistant Communication Specialist",
+            "social": ""
+        },
+        "ani": {
+            "name": "Ani Khumaryan",
+            "position": "Content Writer",
+            "social": ""
+        },
+        "mane": {
+            "name": "Mane Sargsyan",
+            "position": "Mood Maker",
+            "social": ""
+        }
     }
 }
   
