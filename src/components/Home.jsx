@@ -11,6 +11,7 @@ import {
   Advantages,
   Testimonials,
   History,
+  Partners,
 } from "./index";
 import { useLocation } from "react-router-dom";
 
@@ -44,6 +45,7 @@ const Home = () => {
         <Advantages />
         <Testimonials />
         <History />
+        <Partners />
       </MyContext.Provider>
     </>
   );
