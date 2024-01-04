@@ -153,6 +153,28 @@
             "position": "Mood Maker",
             "social": ""
         }
+    },
+    "footer": {
+        "place": "c. Yerevan, Azatutyun 24/15",
+        "safe": "© 2024, © KY academy |, All rights reserved",
+        "design": "Designed by ",
+        "me": "Արման Մանուկյան",
+        "title_links": {
+            "courses": "Courses",
+            "about": "About us",
+            "other": "Other"
+        },
+        "links": {
+            "business": "Your Business from 0",
+            "rights": "Interesting Law",
+            "self_knowledge": "Self Knowledge",
+            "media": "Media",
+            "reviews": "Reviews",
+            "story": "Our Story",
+            "advantages": "Advantages",
+            "partners": "Our Partners",
+            "team": "Team"
+        }
     }
 }
   

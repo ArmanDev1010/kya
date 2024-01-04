@@ -2,7 +2,11 @@ import React from "react";
 
 const SocialMedia = (props) => {
   return (
-    <ul className="flex items-center relative" id={`${props.id}`}>
+    <ul
+      className="flex items-center relative"
+      style={props.footer ? { gap: "20px" } : null}
+      id={`${props.id}`}
+    >
       <li className="transition-opacity ease-in-out duration-200 hover:opacity-75">
         <a href="https://www.facebook.com/kyacademyerevan" target="_blank">
           <svg
@@ -18,7 +22,7 @@ const SocialMedia = (props) => {
         </a>
       </li>
       <li className="transition-opacity ease-in-out duration-200 hover:opacity-75">
-        <a href="https://www.youtube.com/@kidpreneursschool" target="_blank">
+        <a href="https://www.youtube.com/@kyacademy2019" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"

@@ -10,11 +10,13 @@ import mane from "./team/manemain.png";
 import mari from "./team/marimain.png";
 import pointing from "./team/poiting.png";
 import booking from "./team/booking.png";
-import whitelogo from "./whitelogo.png"
+import whitelogo from "./whitelogo.png";
+import textlogo from "./textlogo.png";
 
 export {
   logo,
   whitelogo,
+  textlogo,
   business,
   rights,
   self_knowledge,

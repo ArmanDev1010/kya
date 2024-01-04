@@ -13,6 +13,7 @@ import {
   History,
   Partners,
   Team,
+  Footer,
 } from "./index";
 import { useLocation } from "react-router-dom";
 
@@ -57,7 +58,7 @@ const Home = () => {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
-        
+        <Footer />
       </MyContext.Provider>
     </>
   );

@@ -39,6 +39,9 @@ import Partners from "./partners/Partners";
 // Team
 import Team from "./team/Team";
 
+// Footer
+import Footer from "./footer/Footer";
+
 export {
   Home,
   TopBox,
@@ -58,4 +61,5 @@ export {
   About,
   Partners,
   Team,
+  Footer,
 };
