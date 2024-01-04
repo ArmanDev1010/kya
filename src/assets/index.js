@@ -7,7 +7,7 @@ import rights_thumbnail from "./team/rights_thumbnail.png";
 import self_knowledge_thumbnail from "./team/self_knowledge_thumbnail.png";
 import lilit from "./team/lilitmain.png";
 import mane from "./team/manemain.png";
-import mari from "./team/marimain.png";
+import razmik from "./team/razmikmain.png";
 import pointing from "./team/poiting.png";
 import booking from "./team/booking.png";
 import whitelogo from "./whitelogo.png";
@@ -25,7 +25,7 @@ export {
   self_knowledge_thumbnail,
   lilit,
   mane,
-  mari,
+  razmik,
   pointing,
   booking,
 };

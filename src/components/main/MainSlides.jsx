@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 
 import { Link } from "react-router-dom";
 
-import { lilit, mane, mari } from "../../assets";
+import { lilit, mane, razmik } from "../../assets";
 
 const MainSlides = (props) => {
   const { t } = useTranslation();
@@ -49,7 +49,7 @@ const MainSlides = (props) => {
               : props.color == "secondary"
               ? lilit
               : props.color == "thirdly"
-              ? mari
+              ? razmik
               : null
           }
           alt="right_img"
