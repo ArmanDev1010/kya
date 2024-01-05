@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const HistoryPart = (props) => {
   const { t } = useTranslation();
@@ -7,9 +8,18 @@ const HistoryPart = (props) => {
     <div className="flex items-end max-stablet:flex-col-reverse">
       <div
         className="bg-[#f4f4f5] w-[570px] 
-      min-h-[250px] h-[300px] rounded-tl-[100px] grid place-content-center text-left p-8 max-medium:flex-1 max-stablet:rounded-tl-none max-stablet:w-full max-stablet:flex-1 max-tablet:py-6"
+      min-h-[250px] h-[300px] rounded-tl-[100px] grid place-content-center max-stablet:block text-left p-8 max-medium:flex-1 max-stablet:rounded-tl-none max-stablet:w-full max-stablet:flex-1 max-tablet:py-6"
       >
-        <p className="elip">{t(`about.${props.part}.paragraph`)}</p>
+        <p className={props.part !== "balt" ? "elipp" : null}>
+          {t(`about.${props.part}.paragraph`)}
+        </p>
+        {props.part !== "balt" ? (
+          <Link to={`about`}>
+            <button className="absolute bg-secondary text-white font-medium py-2 px-6 mt-8 rounded-lg transition-all ease-in-out duration-200 hover:opacity-75">
+              {t("history.btn_")}
+            </button>
+          </Link>
+        ) : null}
       </div>
       <div
         style={{

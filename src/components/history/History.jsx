@@ -11,7 +11,7 @@ import HistoryPart from "./HistoryPart";
 
 const History = () => {
   return (
-    <div className="mb-32 px-12 max-stablet:px-8 max-stablet:mb-16">
+    <div className="mb-32 px-12 max-stablet:px-8 max-stablet:mb-16" id="story">
       <div className="relative max-w-[1080px] w-full my-0 mx-auto">
         <Swiper
           pagination={{

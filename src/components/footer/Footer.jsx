@@ -10,7 +10,7 @@ const Footer = () => {
 
   return (
     <div>
-      <div className="max-w-[1480px] my-0 mx-auto p-14 flex">
+      <div className="max-w-[1480px] my-0 mx-auto p-14 flex max-stablet:px-8">
         <div className="stablet:min-w-[350px] max-stablet:w-full">
           <Link to={"/"}>
             <img src={textlogo} alt="logo" className="w-[230px] mb-8" />
