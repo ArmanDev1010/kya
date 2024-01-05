@@ -3,6 +3,7 @@ import { textlogo } from "../../assets";
 import FooterLinks from "./FooterLinks";
 import { useTranslation } from "react-i18next";
 import SocialMedia from "../top-box/SocialMedia";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -11,7 +12,9 @@ const Footer = () => {
     <div>
       <div className="max-w-[1480px] my-0 mx-auto p-14 flex">
         <div className="stablet:min-w-[350px] max-stablet:w-full">
-          <img src={textlogo} alt="logo" className="w-[230px] mb-8" />
+          <Link to={"/"}>
+            <img src={textlogo} alt="logo" className="w-[230px] mb-8" />
+          </Link>
           <p className="font-medium mb-4">{t("footer.place")}</p>
           <div className="my-8 flex flex-col gap-4">
             <SocialMedia footer="true" />

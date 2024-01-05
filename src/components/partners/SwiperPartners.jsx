@@ -37,7 +37,7 @@ const SwiperPartners = () => {
           }}
           loop={true}
           modules={[Autoplay]}
-          className="myMainSwiperP w-full h-full py-8"
+          className="myMainSwiperP relative w-full h-full py-8"
         >
           <SwiperSlide>
             <Partner name="digitain" />

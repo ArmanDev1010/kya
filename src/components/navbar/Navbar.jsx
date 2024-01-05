@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 import { MenuBtn } from "../index";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const { t } = useTranslation();
   const navigate = useNavigate();
 
@@ -21,13 +21,15 @@ const Navbar = () => {
       className={`headerMain ${scroll ? "sticky bg-white" : "py-4 bg-white"}`}
     >
       <div className="max-w-[1480px] w-full px-12 flex items-center justify-between mx-auto my-0 max-desktop:px-7 max-phone:px-6">
-        <img
-          src={logo}
-          alt="logo"
-          className={`headerMain ${
-            scroll ? "w-[65px] h-[65px]" : "w-[70px] h-[70px]"
-          }`}
-        />
+        <Link to={props.footer ? "../" : "/"}>
+          <img
+            src={logo}
+            alt="logo"
+            className={`headerMain ${
+              scroll ? "w-[65px] h-[65px]" : "w-[70px] h-[70px]"
+            }`}
+          />
+        </Link>
         <ul className="flex gap-12 text-[17px] max-btablet:gap-8 max-btablet:text-base max-stablet:hidden">
           <li className="transition-opacity ease-in-out duration-200 hover:opacity-75 cursor-pointer font-semibold">
             <Link to={`about`}>{t(`navbar.about`)}</Link>

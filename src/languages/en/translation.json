@@ -175,6 +175,28 @@
             "partners": "Our Partners",
             "team": "Team"
         }
+    },
+    "about": {
+        "balt": {
+            "year": "2016",
+            "paragraph": "It all started with my visit to the Greater Baltic States in 2016. I traveled to Latvia, Lithuania and Estonia on an exchange program to introduce Armenia, including our culture, customs and life, to the local youth"
+        },
+        "balttw": {
+            "year": "2017",
+            "paragraph": "Communicating with young people and learning about the educational systems of each country for six months, I realized that a lot of attention is paid to non-formal education, especially to raising the level of financial literacy among children and young people. Then I also visited Finland and studied the educational approaches of the Finns. They used gamified educational methods when working with students of any age, which gave very high results"
+        },
+        "open": {
+            "year": "2019",
+            "paragraph": "And it was there that the idea arose to open a school in Armenia that would give our children and young people the opportunity to acquire such knowledge and skills, which, unfortunately, are not provided either in public schools or in non-formal educational institutions. Returning to Armenia, I collected the curricula of international business schools, studied all Armenian financial platforms, consulted with psychologists and experts in the field, and one year later, in 2019, the first curriculum was created"
+        },
+        "two": {
+            "year": "",
+            "paragraph": "At the first reception of KY academy, we had only two registrants. The disappointment was quite big, I even thought that I made a wrong decision and my initiative was not appreciated in Armenia. However, what was started had to be finished, and we started the course with only two students. By the end of the program, many people had already heard about us, and when I was thinking about taking a break, I received many calls to join our course. And so our activities continued until today"
+        },
+        "conn": {
+            "year": "Now",
+            "paragraph": "We already have more than 150 graduates, more than 100 current students, more than 50 successful business projects and more than 50 partners throughout Armenia. At the time of the establishment of the school, I was both a trainer, and a financier, and a marketer, and a sales specialist, and a cleaner, and... and now we are one big team, one big family with the same vision to provide our children and students with all the knowledge and skills possible to succeed in the 21st century. It's never too soon"
+        }
     }
 }
   

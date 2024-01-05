@@ -12,7 +12,7 @@ const Testimonials = () => {
   const { isDesktop } = useContext(MyContext);
 
   return (
-    <div className="mb-24 px-12 max-desktop:px-0 max-medium:mb-16" id="reviews">
+    <div className="mb-36 px-12 max-desktop:px-0 max-medium:mb-24" id="reviews">
       <Swiper
         slidesPerView={isDesktop >= 1050 ? 2 : 1}
         spaceBetween={22}

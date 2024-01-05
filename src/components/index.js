@@ -13,7 +13,8 @@ import SwiperImgs from "./top-box/menu/SwiperImgs";
 import CoursePage from "./courses/CoursePage";
 
 // About
-import About from "./about/About";
+import About from "./About";
+import AboutScroll from "./about/AboutScroll";
 
 //Navbar
 import Navbar from "./navbar/Navbar";
@@ -62,4 +63,5 @@ export {
   Partners,
   Team,
   Footer,
+  AboutScroll
 };

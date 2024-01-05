@@ -7,7 +7,7 @@ const Partners = () => {
 
   return (
     <div
-      className="mb-32 pl-36 box-border max-desktop:pl-16 max-tablet:pl-0 medium:flex medium:gap-16 medium:justify-center medium:items-center"
+      className="mb-32 pl-36 box-border max-desktop:pl-16 max-tablet:pl-0 medium:flex medium:gap-16 medium:justify-center medium:items-center max-tablet:mb-24"
       id="partners"
     >
       <div className="min-w-[450px] w-[450px] max-medium:pl-0 max-medium:w-[500px] max-tablet:pl-8 max-phone:p-6 max-phone:min-w-full max-phone:w-full">
