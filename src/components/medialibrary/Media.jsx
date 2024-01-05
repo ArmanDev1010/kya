@@ -33,16 +33,13 @@ const Media = () => {
               <MediaLink yt="G9AIuLPQZ0s" />
             </SwiperSlide>
             <SwiperSlide>
-              <MediaLink yt="ta-OQaITDN0" />
+              <MediaLink yt="ta-OQaITDN0" ima="yt2" />
             </SwiperSlide>
             <SwiperSlide>
               <MediaLink yt="aeAOabWLfHY" />
             </SwiperSlide>
             <SwiperSlide>
               <MediaLink yt="0kqFVXG5YuI" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <MediaLink yt="XoqNVOFVeJo" />
             </SwiperSlide>
           </Swiper>
         </div>
@@ -51,7 +48,7 @@ const Media = () => {
             <MediaLink yt="hiGbBS6kZcg" />
           </li>
           <li className="h-1/2 w-full pt-2 max-medium:pt-0 max-medium:h-full">
-            <MediaLink yt="mlv_omOvjzc" />
+            <MediaLink yt="mlv_omOvjzc" ima="yt1" />
           </li>
         </ul>
       </div>

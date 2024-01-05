@@ -10,7 +10,7 @@ import { LanguageSwitcher, MenuBtn, SocialMedia } from "../index";
 
 import Links from "./Links";
 
-const TopBox = (props) => {
+const TopBox = () => {
   const { t } = useTranslation();
 
   const [isActive, setIsActive] = useState(false);
@@ -22,7 +22,7 @@ const TopBox = (props) => {
   return (
     <div className="h-[46px] border border-solid" id="top-box">
       <div className="max-w-[1480px] h-full mx-auto my-0 flex items-center justify-between px-12 max-desktop:px-7 max-phone:px-[20px]">
-        <Links props={props} />
+        <Links />
         <div className="flex gap-6 max-desktop:gap-5 relative max-small:gap-3">
           <div className="hidden max-small:block relative">
             <button

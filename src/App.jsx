@@ -66,7 +66,7 @@ const App = () => {
               element={<CoursePage course="self_knowledge" />}
             />
           </Route>
-          {/* <Route path="/about" element={<About />} /> */}
+          <Route path="/about" element={<About />} />
         </Routes>
       </MyContext.Provider>
     </div>

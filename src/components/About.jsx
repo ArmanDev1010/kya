@@ -4,8 +4,8 @@ import { TopBox, Menu, Navbar, AboutScroll, Footer } from "./index";
 const About = () => {
   return (
     <>
-      {/* <TopBox />
-      <Menu />
+      <TopBox />
+      {/* <Menu />
       <Navbar footer="true" />
       <AboutScroll />
       <iframe

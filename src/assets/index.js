@@ -12,11 +12,13 @@ import pointing from "./team/poiting.png";
 import booking from "./team/booking.png";
 import whitelogo from "./whitelogo.png";
 import textlogo from "./textlogo.png";
+import ytlogo from "./ytlogo.png";
 
 export {
   logo,
   whitelogo,
   textlogo,
+  ytlogo,
   business,
   rights,
   self_knowledge,

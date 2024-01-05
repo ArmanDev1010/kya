@@ -270,6 +270,14 @@ img.c {
   -webkit-box-orient: vertical;
 }
 
+.ey {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
 .sticky {
   position: fixed;
   top: 0;
@@ -494,7 +502,7 @@ img.c {
   .mySwiperE .swiper-button-next {
     right: 50px;
   }
-  .mySwiperE .swiper-button-prev{
+  .mySwiperE .swiper-button-prev {
     left: 50px;
   }
   .ci::before {

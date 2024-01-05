@@ -94,12 +94,6 @@
             "mainIMG": "/src/assets/parents/m5.jpg"
         }
     },
-    "history": {
-        "title": "ABOUT US",
-        "par_1": "It all started with my visit to the Baltic countries in 2016. I traveled to Latvia, Lithuania and Estonia on an exchange program to introduce Armenia, including our culture, customs and life, to the local youth.",
-        "par_2": "And it was there that the idea arose to open a school in Armenia that would give our children and young people the opportunity to acquire such knowledge and skills, which, unfortunately, are not provided either in public schools or in non-formal educational institutions. Returning to Armenia...",
-        "btn_": "Know more"
-    },
     "partners": {
         "title": "Partners",
         "paragraph": "Become a Partner of KY academy and let's go together to a colorful new reality. By becoming a member of the KY family, you will enter a modern and unique world. We are always open for interesting proposals and cooperations.",
@@ -196,6 +190,40 @@
         "conn": {
             "year": "Now",
             "paragraph": "We already have more than 150 graduates, more than 100 current students, more than 50 successful business projects and more than 50 partners throughout Armenia. At the time of the establishment of the school, I was both a trainer, and a financier, and a marketer, and a sales specialist, and a cleaner, and... and now we are one big team, one big family with the same vision to provide our children and students with all the knowledge and skills possible to succeed in the 21st century. It's never too soon"
+        }
+    },
+    "media": {
+        "G9AIuLPQZ0s": {
+            "title": "Առավոտը Շանթում-Պատանիների բիզնեսները",
+            "img": "./src/assets/shantlogo.jpg"                        
+        },
+        "ta-OQaITDN0": {
+            "title": "Բիզնես - Լիլիթ Վաթոյան / Business - Lilit Vatoyan - Kidpreneurs School / Heqiatfilm Blog",
+            "img": "https://yt3.googleusercontent.com/ytc/AIf8zZR5UhxO8O3Oz6DzgxPh72a35JutARXyZznKRzORkQ=s800-c-k-c0x00ffffff-no-rj"
+        },
+        "aeAOabWLfHY": {
+            "title": "KIDPRENEURS SCHOOL․ Ավարտական միջոցառում",
+            "img": "https://yt3.googleusercontent.com/ytc/AIf8zZQ5o-XEUHiQ2IuthX3kM0s6hI1HACoxgN4jWnFt=s800-c-k-c0x00ffffff-no-rj"
+        },
+        "0kqFVXG5YuI": {
+            "title": "Անորակ կրթությո՞ւն. կարո՞ղ է արդյոք ոչ ֆորմալ ուսուցումը մոտիվացնել երեխային / «30 Րոպե»",
+            "img": "https://yt3.googleusercontent.com/NFxEW9NKolAVpMFE5ODfyZ8fBJn3m_Tc4u37eVNAr9Z0yaMUwUpTqU5GgR19o4HJaKbZDRJlRA=s800-c-k-c0x00ffffff-no-rj"
+        },
+        "hiGbBS6kZcg": {
+            "title": "Մեր դպրոցի մասին/ About Our School",
+            "img": "./src/assets/whitelogo.png"
+        },
+        "mlv_omOvjzc": {
+            "title": "Ավարտական միջոցառում 21 01 2023",
+            "img": "./src/assets/whitelogo.png"
+        },
+        "RqC72nuN3d4": {
+            "title": "Ավարտական միջոցառում",
+            "img": "./src/assets/whitelogo.png"
+        },
+        "3krYDq05oRc": {
+            "title": "Ավարտական միջոցառում 11․03․2023",
+            "img": "./src/assets/whitelogo.png"
         }
     }
 }
