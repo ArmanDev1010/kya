@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import { useTranslation } from "react-i18next";
 
@@ -7,8 +7,11 @@ import { SwiperImgs } from "../../index";
 import { AiFillStar } from "react-icons/ai";
 
 import { Link } from "react-router-dom";
+import { MyContext } from "../../../context/MyContext";
 
 const Course = (props) => {
+  const { setIs_MenuActive } = useContext(MyContext);
+
   const { t } = useTranslation();
 
   return (
@@ -57,13 +60,25 @@ const Course = (props) => {
                 {t(`top_box.${props.course}.signup`)}
               </button>
             </a>
-            <Link to={!props.about ? `courses/${props.course}` : `../courses/${props.course}`}>
-              <button className="big:text-[22px] big:py-4 big:px-6 bg-transparent text-white border font-medium py-3 px-5 text-lg rounded-lg transition-all ease-in-out duration-200 hover:opacity-75">
+            <Link
+              to={
+                props.about
+                  ? `../courses/${props.course}`
+                  : props.coursepage
+                  ? `../../courses/${props.course}`
+                  : `courses/${props.course}`
+              }
+            >
+              <button
+                className="big:text-[22px] big:py-4 big:px-6 bg-transparent text-white border font-medium py-3 px-5 text-lg rounded-lg 
+              transition-all ease-in-out duration-200 hover:opacity-75"
+                onClick={() => setIs_MenuActive((current) => !current)}
+              >
                 {t(`top_box.${props.course}.learnmore`)}
               </button>
             </Link>
           </div>
-          <SwiperImgs course={props.course} />
+          <SwiperImgs course={props.course} coursepage={props.coursepage} />
         </div>
       </div>
     </div>

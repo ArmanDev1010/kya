@@ -29,7 +29,7 @@ const Navbar = (props) => {
       className={`headerMain ${scroll ? "sticky bg-white" : "py-4 bg-white"}`}
     >
       <div className="max-w-[1480px] w-full px-12 flex items-center justify-between mx-auto my-0 max-desktop:px-7 max-phone:px-6">
-        <Link to={!props.about ? "./" : "../"}>
+        <Link to={props.coursepage ? "../../" : props.about ? "../" : "./"}>
           <img
             src={logo}
             alt="logo"
@@ -40,7 +40,13 @@ const Navbar = (props) => {
         </Link>
         <ul className="flex gap-12 text-[17px] max-btablet:gap-8 max-btablet:text-base max-stablet:hidden">
           <li className="transition-opacity ease-in-out duration-200 hover:opacity-75 cursor-pointer font-semibold">
-            <Link to={!props.about ? "./about" : ""}>{t(`navbar.about`)}</Link>
+            <Link
+              to={
+                props.coursepage ? "../../about" : !props.about ? "./about" : ""
+              }
+            >
+              {t(`navbar.about`)}
+            </Link>
           </li>
           {["courses", "contact"].map((text, key) => (
             <li

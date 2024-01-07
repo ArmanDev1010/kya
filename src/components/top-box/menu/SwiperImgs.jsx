@@ -13,6 +13,7 @@ const SwiperImgs = (props) => {
               ? "3krYDq05oRc"
               : "hiGbBS6kZcg"
           }
+          coursepage={props.coursepage}
         />
         <MediaLink
           yt={
@@ -22,6 +23,7 @@ const SwiperImgs = (props) => {
               ? "0kqFVXG5YuI"
               : "aeAOabWLfHY"
           }
+          coursepage={props.coursepage}
         />
       </div>
     </div>

@@ -18,12 +18,14 @@ import { MyContext } from "../context/MyContext";
 const Home = () => {
   const { targetId, is_Click, setIs_Click } = useContext(MyContext);
 
-  if (document.getElementById(targetId) && is_Click) {
-    document
-      .getElementById(targetId)
-      .scrollIntoView({ block: "center" }, { behavior: "smooth" });
-    setIs_Click(false);
-  }
+  useEffect(() => {
+    if (document.getElementById(targetId) && is_Click) {
+      document
+        .getElementById(targetId)
+        .scrollIntoView({ block: "center" }, { behavior: "smooth" });
+      setIs_Click(false);
+    }
+  }, [targetId && is_Click]);
 
   return (
     <>

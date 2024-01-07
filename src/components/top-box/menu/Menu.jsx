@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import { MyContext } from "../../../context/MyContext";
 
 import {
@@ -60,16 +60,27 @@ const Menu = (props) => {
             className="mySwp !w-full !h-full mx-auto"
           >
             <SwiperSlide>
-              <Course course="business" color="thirdly" about={props.about} />
+              <Course
+                course="business"
+                color="thirdly"
+                about={props.about}
+                coursepage={props.coursepage}
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <Course course="rights" color="primary" about={props.about} />
+              <Course
+                course="rights"
+                color="primary"
+                about={props.about}
+                coursepage={props.coursepage}
+              />
             </SwiperSlide>
             <SwiperSlide>
               <Course
                 course="self_knowledge"
                 color="thirdly"
                 about={props.about}
+                coursepage={props.coursepage}
               />
             </SwiperSlide>
           </Swiper>
@@ -103,7 +114,7 @@ const Menu = (props) => {
             </Link>
           </div>
           <ul className="pt-10 text-2xl">
-            <Links about={props.about} />
+            <Links about={props.about} coursepage={props.coursepage} />
           </ul>
         </div>
       )}

@@ -199,15 +199,15 @@
         },
         "ta-OQaITDN0": {
             "title": "Բիզնես - Լիլիթ Վաթոյան / Business - Lilit Vatoyan - Kidpreneurs School / Heqiatfilm Blog",
-            "img": "https://yt3.googleusercontent.com/ytc/AIf8zZR5UhxO8O3Oz6DzgxPh72a35JutARXyZznKRzORkQ=s800-c-k-c0x00ffffff-no-rj"
+            "img": "./src/assets/jpit.jpg"
         },
         "aeAOabWLfHY": {
             "title": "KIDPRENEURS SCHOOL․ Ավարտական միջոցառում",
-            "img": "https://yt3.googleusercontent.com/ytc/AIf8zZQ5o-XEUHiQ2IuthX3kM0s6hI1HACoxgN4jWnFt=s800-c-k-c0x00ffffff-no-rj"
+            "img": "./src/assets/erit.jpg"
         },
         "0kqFVXG5YuI": {
             "title": "Անորակ կրթությո՞ւն. կարո՞ղ է արդյոք ոչ ֆորմալ ուսուցումը մոտիվացնել երեխային / «30 Րոպե»",
-            "img": "https://yt3.googleusercontent.com/NFxEW9NKolAVpMFE5ODfyZ8fBJn3m_Tc4u37eVNAr9Z0yaMUwUpTqU5GgR19o4HJaKbZDRJlRA=s800-c-k-c0x00ffffff-no-rj"
+            "img": "./src/assets/tb.jpg"
         },
         "hiGbBS6kZcg": {
             "title": "Մեր դպրոցի մասին/ About Our School",
@@ -225,6 +225,6 @@
             "title": "Ավարտական միջոցառում 11․03․2023",
             "img": "./src/assets/whitelogo.png"
         }
-    }  
+    }
 }
   

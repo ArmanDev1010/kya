@@ -10,7 +10,7 @@ import Course from "./top-box/menu/Course";
 import SwiperImgs from "./top-box/menu/SwiperImgs";
 
 // Courses
-import CoursePage from "./courses/CoursePage";
+import CoursePage from "./CoursePage";
 
 // About
 import About from "./About";

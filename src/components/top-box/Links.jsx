@@ -29,7 +29,7 @@ const Links = (props) => {
             setIs_MenuActive((current) => (current === true ? false : null))
           }
         >
-          <Link to={`about`}>{t(`navbar.about`)}</Link>
+          <Link to={props.coursepage ? "../../about" : !props.about ? "./about" : ""}>{t(`navbar.about`)}</Link>
         </li>
       ) : null}
       {["courses", "contact"].map((text, key) => (

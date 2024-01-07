@@ -21,7 +21,7 @@ const MediaLink = (props) => {
           >
             <div className="absolute top-5 left-5 flex items-center gap-4 overflow-hidden max-w-full">
               <img
-                src={t(`media.${props.yt}.img`)}
+                src={props.coursepage ? "../"+t(`media.${props.yt}.img`) : t(`media.${props.yt}.img`)}
                 className="bg-white w-[40px] h-[40px] rounded-full"
                 alt=""
               />

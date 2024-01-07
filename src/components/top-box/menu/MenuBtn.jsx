@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { MyContext } from "../../../context/MyContext";
 
 const MenuBtn = (props) => {
-  const { setIs_MenuActive, isDesktop} = useContext(MyContext);
+  const { setIs_MenuActive, isDesktop } = useContext(MyContext);
 
   const menuSlide = () => {
     setIs_MenuActive((current) => !current);
