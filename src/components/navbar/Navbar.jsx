@@ -1,13 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { logo } from "../../assets";
 import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import { MenuBtn } from "../index";
+import { MyContext } from "../../context/MyContext";
 
 const Navbar = (props) => {
-  const { t } = useTranslation();
+  const { setIs_Click } = useContext(MyContext);
   const navigate = useNavigate();
+
+  const { t } = useTranslation();
+
+  const linkClick = (text) => {
+    navigate("/", { state: { targetId: `${text}` } });
+    setIs_Click(true);
+  };
 
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
@@ -37,9 +45,7 @@ const Navbar = (props) => {
           {["courses", "contact"].map((text, key) => (
             <li
               key={key}
-              onClick={() => {
-                navigate("/", { state: { targetId: `${text}` } });
-              }}
+              onClick={() => linkClick(text)}
               className="transition-opacity ease-in-out duration-200 hover:opacity-75 cursor-pointer font-semibold"
             >
               {t(`navbar.${text}`)}
