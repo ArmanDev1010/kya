@@ -4,9 +4,15 @@ import { Link, useNavigate } from "react-router-dom";
 import { MyContext } from "../../context/MyContext";
 
 const FooterLinks = (props) => {
-  const { isDesktop } = useContext(MyContext);
+  const { isDesktop, setIs_Click } = useContext(MyContext);
   const { t } = useTranslation();
   const navigate = useNavigate();
+
+  const linkClick = (text) => {
+    navigate("/", { state: { targetId: `${text}` } });
+    setIs_Click(true);
+  };
+
   return (
     <ul
       className="flex flex-col gap-6 flex-1"
@@ -35,15 +41,15 @@ const FooterLinks = (props) => {
         .map((text, key) => (
           <li
             key={key}
-            onClick={
-              props.title !== "courses"
-                ? () => navigate("/", { state: { targetId: `${text}` } })
-                : null
-            }
+            onClick={() => (props.title !== "courses" ? linkClick(text) : null)}
             className="text-[17px] transition-opacity ease-in-out duration-200 hover:opacity-75 cursor-pointer"
           >
             {props.title == "courses" ? (
-              <Link to={`courses/${text}`}>{t(`footer.links.${text}`)}</Link>
+              <Link
+                to={!props.about ? `courses/${text}` : `../courses/${text}`}
+              >
+                {t(`footer.links.${text}`)}
+              </Link>
             ) : (
               t(`footer.links.${text}`)
             )}

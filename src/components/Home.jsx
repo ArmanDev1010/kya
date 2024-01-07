@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 
 import {
   TopBox,
@@ -13,8 +13,19 @@ import {
   Team,
   Footer,
 } from "./index";
+import { MyContext } from "../context/MyContext";
 
 const Home = () => {
+  const { targetId, is_Click } = useContext(MyContext);
+
+  useEffect(() => {
+    if (document.getElementById(targetId) && is_Click) {
+      document
+        .getElementById(targetId)
+        .scrollIntoView({ block: "center" }, { behavior: "smooth" });
+    }
+  }, [targetId]);
+
   return (
     <>
       <TopBox />

@@ -34,16 +34,9 @@ i18n.use(initReactI18next).init({
 
 const App = () => {
   const [is_MenuActive, setIs_MenuActive] = useState(false);
+  const [is_Click, setIs_Click] = useState(false);
   const { state } = useLocation();
   const { targetId } = state || {};
-
-  const el = document.getElementById(targetId);
-
-  useEffect(() => {
-    if (el) {
-      el.scrollIntoView({ block: "center" }, { behavior: "smooth" });
-    }
-  }, [el]);
 
   const [isDesktop, setIsDesktop] = useState(window.innerWidth);
 
@@ -54,7 +47,14 @@ const App = () => {
   return (
     <div className="font-montserrat">
       <MyContext.Provider
-        value={{ is_MenuActive, setIs_MenuActive, isDesktop }}
+        value={{
+          is_MenuActive,
+          setIs_MenuActive,
+          isDesktop,
+          is_Click,
+          setIs_Click,
+          targetId,
+        }}
       >
         <Routes>
           <Route path="/" element={<Home />} />

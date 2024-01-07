@@ -27,8 +27,9 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Links from "../Links";
+import { Link } from "react-router-dom";
 
-const Menu = () => {
+const Menu = (props) => {
   const { is_MenuActive, setIs_MenuActive, isDesktop } = useContext(MyContext);
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
@@ -59,13 +60,17 @@ const Menu = () => {
             className="mySwp !w-full !h-full mx-auto"
           >
             <SwiperSlide>
-              <Course course="business" color="thirdly" />
+              <Course course="business" color="thirdly" about={props.about} />
             </SwiperSlide>
             <SwiperSlide>
-              <Course course="rights" color="primary" />
+              <Course course="rights" color="primary" about={props.about} />
             </SwiperSlide>
             <SwiperSlide>
-              <Course course="self_knowledge" color="thirdly" />
+              <Course
+                course="self_knowledge"
+                color="thirdly"
+                about={props.about}
+              />
             </SwiperSlide>
           </Swiper>
           <Swiper
@@ -92,9 +97,13 @@ const Menu = () => {
         </div>
       ) : (
         <div className="h-[100vh] w-full bg-primary text-white pt-10 overflow-y-auto">
-          <img src={whitelogo} alt="logo" className="w-[65px] h-[65px] ml-10" />
+          <div className="w-[65px] h-[65px] ml-10">
+            <Link to={!props.about ? "/" : `../`}>
+              <img src={whitelogo} alt="logo" />
+            </Link>
+          </div>
           <ul className="pt-10 text-2xl">
-            <Links />
+            <Links about={props.about} />
           </ul>
         </div>
       )}

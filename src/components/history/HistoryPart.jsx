@@ -16,7 +16,7 @@ const HistoryPart = (props) => {
         {props.part !== "balt" ? (
           <Link to={`about`}>
             <button className="absolute bg-secondary text-white font-medium py-2 px-6 mt-8 rounded-lg transition-all ease-in-out duration-200 hover:opacity-75">
-              {t("history.btn_")}
+              {t("top_box.business.learnmore")}
             </button>
           </Link>
         ) : null}

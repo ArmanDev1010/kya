@@ -57,7 +57,7 @@ const Course = (props) => {
                 {t(`top_box.${props.course}.signup`)}
               </button>
             </a>
-            <Link to={`courses/${props.course}`}>
+            <Link to={!props.about ? `courses/${props.course}` : `../courses/${props.course}`}>
               <button className="big:text-[22px] big:py-4 big:px-6 bg-transparent text-white border font-medium py-3 px-5 text-lg rounded-lg transition-all ease-in-out duration-200 hover:opacity-75">
                 {t(`top_box.${props.course}.learnmore`)}
               </button>

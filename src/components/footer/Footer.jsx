@@ -9,7 +9,7 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <div id="contact">
       <div className="max-w-[1480px] my-0 mx-auto p-14 flex max-stablet:px-8">
         <div className="stablet:min-w-[350px] max-stablet:w-full">
           <Link to={"/"}>
@@ -35,7 +35,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="w-full flex gap-24 pl-32 max-desktop:pl-24 max-desktop:flex-wrap max-desktop:gap-y-12 max-stablet:hidden">
-          <FooterLinks title="courses" />
+          <FooterLinks title="courses" about={true} />
           <FooterLinks title="about" />
           <FooterLinks title="other" />
         </div>
